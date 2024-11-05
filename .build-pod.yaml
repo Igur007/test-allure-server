@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+    - image: docker:20.10.12
+      name: docker
+      command: ["sleep", "infinity"]
+      env:
+      - name: DOCKER_TLS_VERIFY
+        value: ""
+      - name: DOCKER_HOST
+        value: tcp://localhost:2375
+    - name: dind
+      image: xxx.jfrog.io/core/tests-dind:v1
+      args: ["--insecure-registry=$(REGISTRY)"]
+      env:
+      - name: REGISTRY
+        value: hub.k8s.li
+      - name: DOCKER_TLS_CERTDIR
+        value: ""
+      - name: DOCKER_HOST
+        value: tcp://localhost:2375
+      securityContext:
+        privileged: true
+      tty: true
+      readinessProbe:
+        exec:
+          command: ["docker", "info"]
+        initialDelaySeconds: 10
+        failureThreshold: 6
+  imagePullSecrets:
+  - name: sealed-regcred-jfrog

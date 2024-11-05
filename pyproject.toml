@@ -1,0 +1,168 @@
+[project]
+name = "harness"
+version = "0.0.1"
+description = "tests"
+authors = [
+  {email = "igur007@gmail.com"},
+  {name = "Ivan Huryn"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+     "allure-pytest >= 2.9.45",
+     "app-confetti >= 0.1.1",
+     "pytest >= 7.1.2",
+     "pytest-env >= 0.6.2",
+     "pytest-html >= 3.1.1",
+     "pytest-random-order >= 1.0.4",
+     "pytest-xdist >= 2.5.0",
+     "requests >= 2.28.1",
+     "Faker >= 14.1.0",
+     "dataclasses-json >= 0.5.7",
+     "pytest-dotenv >= 0.5.2",
+     "python-keycloak >= 2.6.0",
+     "pytest-rerunfailures >= 10.2",
+     "PyJWT >= 2.6.0",
+     "jinja2 >= 3.1.2",
+     "psycopg2 >= 2.9.6",
+     "pytest-timeout >= 2.2.0",
+]
+[project.optional-dependencies]
+dev = [
+    # Style
+    "autopep8 >= 1.5.7",
+    "ruff >= 0.0.267",
+    "pre-commit >= 3.7.1",
+    # Tests
+    "pytest-cov >= 3.0.0",
+    # Releases
+    "bump2version",
+    "pyspark",
+]
+
+
+[[tool.changelog_gen.files]]
+filename = "chart/Chart.yaml"
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+markers = [
+    "positive: successfull scenario (deselect with '-m \"not positive\"')",
+    "negative: validation error is expected",
+    "slow: duration could be > 30 seconds and execution time depends on env and async preconditions",
+    "security: security checks",
+    "serial: tests that cannot be run in parallel with other tests",
+    "performance: performance tests",
+]
+addopts = "-vv -r xsX --capture=sys --tb=short --alluredir allure-results"
+testpaths = [
+    "tests/integration",
+    "tests/security",
+    "tests/performance",
+]
+env_override_existing_values = 1
+env = [
+    "D:MINIO_PORT=80",
+    "D:MINIO_USER=minio",
+    "D:MINIO_SECRET=CHANGE_ME",
+    "D:MINIO_REGION=us-east-1",
+    "D:PAUSE_DURATION=0",
+    "D:WITH_NEW_SESSION=false",
+    "D:SLOW_TEST_MAX_DURATION=300", # seconds
+    "D:ENABLE_POST_CONDITIONS=true",
+]
+
+
+env_files = [
+    ".env",
+    ".local.env",
+    ".oci.dev.env",
+    ".sc03.dev.env",
+    ".qa.test.env"
+]
+
+
+[tool.ruff]
+line-length = 120
+select = ["ALL"]
+ignore = [
+    "ANN002", # type annotation on *args
+    "ANN003", # type annotation on **kwargs
+    "ANN101", # annotate self
+    "ANN102", # annotate cls
+    "ANN204", #  Missing return type annotation for special method `__init__`
+    "B008", # fastapi involves a lot of function calls in function definitions
+    "B009", # [*] Do not call `getattr` with a constant attribute value.
+    "DTZ", # datetime.now() usage without tz arg
+    "EM",  # [*] Exception must not use an f-string literal
+    "FBT", #  Boolean default value / positional arg in function definition
+    "FIX002", # Line contains _todo, consider resolving the issue
+    "G004", # Logging statement uses f-string
+    "PLR0913", # too many arguments to a function call
+    "PLR2004", #  Magic value used in comparison, consider replacing with a constant variable
+    "PT004", # Fixture does not return anything, add leading underscore
+    "PTH123", #  `open()` should be replaced by `Path.open()`
+    "PT017", # Found assertion on exception `e` in `except` block, use `pytest.raises()` instead
+    "S", # bandit is run as a full commit hook
+    "SLF001", # Private member accessed
+    "TD003", # Missing issue link on the line following this _TODO
+    "TRY003", # Avoid specifying long messages outside the exception class
+]
+src = ["harness", "tests"]
+exclude = []
+
+[tool.ruff.per-file-ignores]
+"tasks.py" = ["ANN", "E501", "INP001"]
+"*" = ["ANN", "D", "SLF001"]
+"harness/config/*" = ["RUF009"]
+
+
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+parametrize-names-type = "csv"
+
+
+[tool.ruff.isort]
+force-single-line = true
+force-sort-within-sections = true
+#default_section = "THIRDPARTY"
+lines-after-imports = 2
+combine-as-imports = true
+#known-first-party = ["tests"]
+no-lines-before = ["first-party"]
+#skip = [".venv", ".git"]
+
+
+[tool.coverage.report]
+sort = "cover"
+fail_under = 0
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == '__main__':",
+    "@abc.abstractmethod"
+]
+
+[tool.coverage.run]
+branch = true
+source = ["harness"]
+
+[tool.files]
+extend-exclude = ["harness/data/files"]
+
+[tool.typos.default.extend-words]
+ot = "ot"
+thar = "thar"
+mak = "mak"
+mata = "mata"
