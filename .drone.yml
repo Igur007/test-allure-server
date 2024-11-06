@@ -53,5 +53,5 @@ steps:
     - ls -lha
     - |  
       # Upload the zip file to the Allure server
-      curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local:8080/api/result' \
+      curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local/api/result' \
         --form 'allureResults=@"allure-results.zip"'
