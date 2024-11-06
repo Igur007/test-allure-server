@@ -14,40 +14,42 @@ trigger:
     - refs/tags/v**
 
 steps:
-- name: check style
-  image: igur007/py3106allure:latest
-  pull: if-not-exists
-  commands:
-  - pip3 install invoke
-  - pip3 install uv
-  - inv install-dev
-  - . .venv/bin/activate
-#  - pre-commit run --all-files
-#  - inv check-style
+  - name: check style
+    image: igur007/py3106allure:latest
+    pull: if-not-exists
+    commands:
+    - pip3 install invoke
+    - pip3 install uv
+    - inv install-dev
+    - . .venv/bin/activate
+  #  - pre-commit run --all-files
+  #  - inv check-style
 
-- name: run unit tests
-  image: igur007/py3106allure:latest
-  pull: if-not-exists
-  commands:
-  - pip3 install invoke
-  - . .venv/bin/activate
-  - inv tests-coverage
-  depends_on:
-  - check style
+  - name: run unit tests
+    image: igur007/py3106allure:latest
+    pull: if-not-exists
+    commands:
+    - pip3 install invoke
+    - . .venv/bin/activate
+    - inv tests-coverage
+    depends_on:
+    - check style
 
-- name: upload allure results
-  image: igur007/py3106allure:latest
-  pull: if-not-exists
-  commands:
-  - ls -lha
-  - |
-    # Zip the allure-results folder
-    if [ -d "allure-results" ]; then
-      zip -r allure-results.zip allure-results
-    else
-      echo "allure-results folder not found"
-      exit 1
-    fi
+  - name: upload allure results
+    image: igur007/py3106allure:latest
+    pull: if-not-exists
+    depends_on:
+      - run unit tests
+    commands:
+    - ls -lha
+    - |
+      # Zip the allure-results folder
+      if [ -d "allure-results" ]; then
+        zip -r allure-results.zip allure-results
+      else
+        echo "allure-results folder not found"
+        exit 1
+      fi
     
     # Upload the zip file to the Allure server
     curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local:8080/api/result' \
