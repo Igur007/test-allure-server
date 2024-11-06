@@ -32,6 +32,9 @@
 kind: pipeline
 name: default
 
+platform:
+  os: linux
+  arch: arm64
 
 trigger:
   ref:
