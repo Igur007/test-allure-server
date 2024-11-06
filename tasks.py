@@ -9,7 +9,7 @@ def install(context):
 @invoke.task
 def install_dev(context):
     context.run("uv sync --extra dev")
-    context.run("uv run pre-commit install")
+    # context.run("uv run pre-commit install")
 
 
 @invoke.task
