@@ -47,10 +47,11 @@ steps:
       if [ -d "allure-results" ]; then
         zip -r allure-results.zip allure-results
       else
-        ls -lha
         echo "allure-results folder not found"
         exit 1
       fi
+    - ls -lha
+    - |  
       # Upload the zip file to the Allure server
       curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local:8080/api/result' \
         --form 'allureResults=@"allure-results.zip"'
