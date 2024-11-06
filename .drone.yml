@@ -41,7 +41,7 @@ steps:
 #    depends_on:
 #      - run unit tests
     commands:
-    - ls -lha
+    - apt-get update && apt-get install -y zip
     - |
       # Zip the allure-results folder
       if [ -d "allure-results" ]; then
