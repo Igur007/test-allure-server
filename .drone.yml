@@ -32,6 +32,7 @@
 kind: pipeline
 name: default
 
+
 trigger:
   ref:
     include:
