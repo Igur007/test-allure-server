@@ -38,8 +38,8 @@ steps:
   - name: upload allure results
     image: igur007/py3106allure:latest
     pull: if-not-exists
-    depends_on:
-      - run unit tests
+#    depends_on:
+#      - run unit tests
     commands:
     - ls -lha
     - |
