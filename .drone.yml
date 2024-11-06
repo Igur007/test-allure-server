@@ -20,6 +20,7 @@ steps:
   pull: if-not-exists
   commands:
   - pip3 install invoke
+  - pip3 install uv
   - inv install-dev
   - . .venv/bin/activate
   - pre-commit run --all-files
