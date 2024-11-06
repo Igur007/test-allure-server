@@ -50,8 +50,6 @@ steps:
         echo "allure-results folder not found"
         exit 1
       fi
-    
-    # Upload the zip file to the Allure server
-    curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local:8080/api/result' \
-      --form 'allureResults=@"allure-results.zip"'
-
+      # Upload the zip file to the Allure server
+      curl --location --request POST 'http://allure-server.allure-server.svc.cluster.local:8080/api/result' \
+        --form 'allureResults=@"allure-results.zip"'
