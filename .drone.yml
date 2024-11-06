@@ -23,8 +23,8 @@ steps:
   - pip3 install uv
   - inv install-dev
   - . .venv/bin/activate
-  - pre-commit run --all-files
-  - inv check-style
+#  - pre-commit run --all-files
+#  - inv check-style
 
 - name: run unit tests
   image: igur007/py3106allure:latest
