@@ -9,8 +9,7 @@ trigger:
   ref:
     include:
     - refs/heads/main
-    - refs/heads/sandbox
-    - refs/heads/test
+    - refs/remotes/origin/main
     - refs/pull/**
     - refs/tags/v**
 
