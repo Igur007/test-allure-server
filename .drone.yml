@@ -35,7 +35,7 @@ steps:
   depends_on:
   - check style
 
-- name: run unit tests
+- name: upload allure results
   image: igur007/py3106allure:latest
   pull: if-not-exists
   commands:
