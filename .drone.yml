@@ -1,36 +1,5 @@
-#kind: pipeline
-#name: test 3.10
-#
-#trigger:
-#  ref:
-#    include:
-#    - refs/heads/main
-#    - refs/heads/sandbox
-#    - refs/heads/test
-#    - refs/pull/**
-#    - refs/tags/v**
-#
-#steps:
-#- name: check style
-#  image: igur007/py3106allure:latest
-#  pull: if-not-exists
-#  commands:
-#  - inv install-dev
-#  - . .venv/bin/activate
-#  - pre-commit run --all-files
-#  - inv check-style
-#
-#- name: run unit tests
-#  image: igur007/py3106allure:latest
-#  pull: if-not-exists
-#  commands:
-#  - . .venv/bin/activate
-#  - inv tests-coverage
-#  depends_on:
-#  - check style
-#
 kind: pipeline
-name: default
+name: test 3.10
 
 platform:
   os: linux
@@ -46,8 +15,22 @@ trigger:
     - refs/tags/v**
 
 steps:
-  - name: build
-    image: node:14
-    commands:
-      - npm install
-      - npm test
+- name: check style
+  image: igur007/py3106allure:latest
+  pull: if-not-exists
+  commands:
+  - inv install-dev
+  - . .venv/bin/activate
+  - pre-commit run --all-files
+  - inv check-style
+
+- name: run unit tests
+  image: igur007/py3106allure:latest
+  pull: if-not-exists
+  commands:
+  - . .venv/bin/activate
+  - inv tests-coverage
+  depends_on:
+  - check style
+
+
