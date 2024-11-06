@@ -1,0 +1,671 @@
+[2023-10-30 10:40:17,003] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:40:17,004] - INFO       Headers: {}
+[2023-10-30 10:40:17,004] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTYsImlhdCI6MTY5ODY1NTIxNiwianRpIjoiMWQxYTE1ZWItMjcyMy00OGRiLTkwNmEtZDdlY2YwYTUzMTIxIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYjc5ZjUxMTQtZGMwNS00YjlhLWJhZDQtMzE2ZTZiZGNhOWJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImI3OWY1MTE0LWRjMDUtNGI5YS1iYWQ0LTMxNmU2YmRjYTliZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.VLtgA4_kXKV5vv5Dk9ZjimYF-l3w0uKvVbdP-RcupGqvXj8TbpeyzocPQIWnVfbg8dqsrwEXIWNKEbceoEEQmWNulKz-nYmkHQ7AQb8WL7rA9tqC-_JHVKzZFO1anQhQvCFZoTst-4bc86lFgXM23a454nhWvwyf_r4DANHC4QG1RkSrLbU0tZ11IYiJKaDC7etnTQ9kLVK5rVFcB_l6hc98xKnjCHFiiCjIHditcPJJvKrufQhX2dYzaoC6xfAURqmkSmbrTx6sZTBKMoMSfYnhmAp1yzP1LnuVFM5e9BUGT_1zRLkIUy_Rcl4uQWxLi_AVXa2mRifn9EVIdHqsuw'}
+[2023-10-30 10:40:17,004] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:40:17,155] - INFO       Response status code: 200
+[2023-10-30 10:40:17,156] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTcwMTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiYzhkZTk5YzctZWRjMS00NjY1LWJjODQtMGIyNGQ2OTY4MzE2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIxZmE3Mjg1NS03NjY2LTRhODUtODZhMy05NzBjYzM1MDZhMDciLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3In0.sif7A4dVnYQTCMmatizuuWS9GqGhq5yp7YUA9C0nPJU",
+    "scope": "openid profile email",
+    "session_state": "1fa72855-7666-4a85-86a3-970cc3506a07",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:40:17,157] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product
+[2023-10-30 10:40:17,158] - INFO       Headers: {}
+[2023-10-30 10:40:17,158] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:17,158] - INFO       Body:
+ {
+    "entity": {
+        "description": "Autotest DP auto source product 1_hbtmjttnvm",
+        "label": "ADP",
+        "name": "auto source product 1_hbtmjttnvm"
+    },
+    "entity_info": {
+        "contact_ids": [],
+        "links": [],
+        "owner": "Big Boss"
+    }
+}
+[2023-10-30 10:40:17,264] - INFO       Response status code: 200
+[2023-10-30 10:40:17,264] - INFO       Response text:
+ {
+    "created_at": "2023-10-30T08:40:17.332735Z",
+    "description": "Autotest DP auto source product 1_hbtmjttnvm",
+    "identifier": "1e5e8774-18d8-4d44-9a54-b01468eb8afc",
+    "is_system": false,
+    "label": "ADP",
+    "name": "auto source product 1_hbtmjttnvm",
+    "state": {
+        "code": "001",
+        "healthy": false,
+        "reason": "Requires configuration."
+    },
+    "urn": "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:ivanh2:data_product:1e5e8774-18d8-4d44-9a54-b01468eb8afc"
+}
+[2023-10-30 10:40:17,266] - INFO       Sending HTTP PUT to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc/schema
+[2023-10-30 10:40:17,266] - INFO       Headers: {}
+[2023-10-30 10:40:17,267] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:17,267] - INFO       Body:
+ {
+    "details": {
+        "fields": [
+            {
+                "data_type": {
+                    "column_type": "VARCHAR",
+                    "meta": {
+                        "length": "250"
+                    }
+                },
+                "description": "",
+                "name": "id",
+                "optional": false,
+                "primary": true,
+                "tags": []
+            },
+            {
+                "data_type": {
+                    "column_type": "VARCHAR",
+                    "meta": {
+                        "length": "250"
+                    }
+                },
+                "description": "",
+                "name": "name",
+                "optional": false,
+                "primary": false,
+                "tags": []
+            },
+            {
+                "data_type": {
+                    "column_type": "INTEGER",
+                    "meta": {}
+                },
+                "description": "",
+                "name": "year",
+                "optional": true,
+                "primary": false,
+                "tags": []
+            }
+        ],
+        "product_type": "stored"
+    }
+}
+[2023-10-30 10:40:17,906] - INFO       Response status code: 200
+[2023-10-30 10:40:17,906] - INFO       Response text:
+ {
+    "fields": [
+        {
+            "data_type": {
+                "column_type": "VARCHAR",
+                "meta": {
+                    "length": "250"
+                }
+            },
+            "description": "",
+            "name": "id",
+            "optional": false,
+            "primary": true,
+            "tags": []
+        },
+        {
+            "data_type": {
+                "column_type": "VARCHAR",
+                "meta": {
+                    "length": "250"
+                }
+            },
+            "description": "",
+            "name": "name",
+            "optional": false,
+            "primary": false,
+            "tags": []
+        },
+        {
+            "data_type": {
+                "column_type": "INTEGER",
+                "meta": {}
+            },
+            "description": "",
+            "name": "year",
+            "optional": true,
+            "primary": false,
+            "tags": []
+        }
+    ]
+}
+[2023-10-30 10:40:17,908] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc
+[2023-10-30 10:40:17,908] - INFO       Headers: {}
+[2023-10-30 10:40:17,909] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:17,909] - INFO       Body:
+ {}
+[2023-10-30 10:40:18,008] - INFO       Response status code: 200
+[2023-10-30 10:40:18,009] - INFO       Response text:
+ {
+    "entity": {
+        "created_at": "2023-10-30T08:40:17.332735Z",
+        "description": "Autotest DP auto source product 1_hbtmjttnvm",
+        "identifier": "1e5e8774-18d8-4d44-9a54-b01468eb8afc",
+        "is_system": false,
+        "label": "ADP",
+        "name": "auto source product 1_hbtmjttnvm",
+        "owner": "Big Boss",
+        "state": {
+            "code": "001",
+            "healthy": false,
+            "reason": "Requires configuration."
+        },
+        "urn": "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:ivanh2:data_product:1e5e8774-18d8-4d44-9a54-b01468eb8afc"
+    },
+    "entity_info": {
+        "contact_ids": [],
+        "links": [],
+        "owner": "Big Boss"
+    },
+    "links": {
+        "children": [],
+        "parents": []
+    },
+    "published": false,
+    "schema_available": true,
+    "spark": null,
+    "table": {
+        "engine": "iceberg",
+        "table_name": "iceberg.neos.\"auto_source_product_1_hbtmjttnvm\""
+    },
+    "tags": []
+}
+[2023-10-30 10:40:18,012] - INFO       [TRINO] Executing INSERT INTO iceberg.neos."auto_source_product_1_hbtmjttnvm" VALUES (('1', 'Clark', 1980))
+[2023-10-30 10:40:18,522] - INFO       [TRINO] Execution results: [{'rows': 1}]
+[2023-10-30 10:40:18,523] - INFO       [TRINO] Executing INSERT INTO iceberg.neos."auto_source_product_1_hbtmjttnvm" VALUES (('2', 'Kent', 1984))
+[2023-10-30 10:40:18,945] - INFO       [TRINO] Execution results: [{'rows': 1}]
+[2023-10-30 10:40:18,946] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc/data
+[2023-10-30 10:40:18,946] - INFO       Headers: {}
+[2023-10-30 10:40:18,946] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:18,946] - INFO       Body:
+ {}
+[2023-10-30 10:40:19,112] - INFO       Response status code: 200
+[2023-10-30 10:40:19,112] - INFO       Response text:
+ {
+    "results": [
+        {
+            "id": "2",
+            "name": "Kent",
+            "year": 1984
+        },
+        {
+            "id": "1",
+            "name": "Clark",
+            "year": 1980
+        }
+    ]
+}
+[2023-10-30 10:40:19,114] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product
+[2023-10-30 10:40:19,114] - INFO       Headers: {}
+[2023-10-30 10:40:19,115] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:19,115] - INFO       Body:
+ {
+    "entity": {
+        "description": "Autotest DP Auto product stored_nfskumkqcf",
+        "label": "ADP",
+        "name": "Auto product stored_nfskumkqcf"
+    },
+    "entity_info": {
+        "contact_ids": [],
+        "links": [],
+        "owner": "Big Boss"
+    }
+}
+[2023-10-30 10:40:19,222] - INFO       Response status code: 200
+[2023-10-30 10:40:19,223] - INFO       Response text:
+ {
+    "created_at": "2023-10-30T08:40:19.290274Z",
+    "description": "Autotest DP Auto product stored_nfskumkqcf",
+    "identifier": "14c2d649-8cc3-47d4-af6f-f9aef0749f0a",
+    "is_system": false,
+    "label": "ADP",
+    "name": "Auto product stored_nfskumkqcf",
+    "state": {
+        "code": "001",
+        "healthy": false,
+        "reason": "Requires configuration."
+    },
+    "urn": "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:ivanh2:data_product:14c2d649-8cc3-47d4-af6f-f9aef0749f0a"
+}
+[2023-10-30 10:40:19,224] - INFO       Sending HTTP PUT to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/schema
+[2023-10-30 10:40:19,224] - INFO       Headers: {}
+[2023-10-30 10:40:19,225] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:19,225] - INFO       Body:
+ {
+    "details": {
+        "fields": [
+            {
+                "data_type": {
+                    "column_type": "VARCHAR",
+                    "meta": {
+                        "length": "250"
+                    }
+                },
+                "description": "",
+                "name": "id",
+                "optional": false,
+                "primary": true,
+                "tags": []
+            },
+            {
+                "data_type": {
+                    "column_type": "VARCHAR",
+                    "meta": {
+                        "length": "250"
+                    }
+                },
+                "description": "",
+                "name": "name",
+                "optional": false,
+                "primary": false,
+                "tags": []
+            },
+            {
+                "data_type": {
+                    "column_type": "INTEGER",
+                    "meta": {}
+                },
+                "description": "",
+                "name": "year",
+                "optional": true,
+                "primary": false,
+                "tags": []
+            }
+        ],
+        "product_type": "stored"
+    }
+}
+[2023-10-30 10:40:19,832] - INFO       Response status code: 200
+[2023-10-30 10:40:19,833] - INFO       Response text:
+ {
+    "fields": [
+        {
+            "data_type": {
+                "column_type": "VARCHAR",
+                "meta": {
+                    "length": "250"
+                }
+            },
+            "description": "",
+            "name": "id",
+            "optional": false,
+            "primary": true,
+            "tags": []
+        },
+        {
+            "data_type": {
+                "column_type": "VARCHAR",
+                "meta": {
+                    "length": "250"
+                }
+            },
+            "description": "",
+            "name": "name",
+            "optional": false,
+            "primary": false,
+            "tags": []
+        },
+        {
+            "data_type": {
+                "column_type": "INTEGER",
+                "meta": {}
+            },
+            "description": "",
+            "name": "year",
+            "optional": true,
+            "primary": false,
+            "tags": []
+        }
+    ]
+}
+[2023-10-30 10:40:19,835] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a
+[2023-10-30 10:40:19,835] - INFO       Headers: {}
+[2023-10-30 10:40:19,835] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:19,836] - INFO       Body:
+ {}
+[2023-10-30 10:40:19,943] - INFO       Response status code: 200
+[2023-10-30 10:40:19,943] - INFO       Response text:
+ {
+    "entity": {
+        "created_at": "2023-10-30T08:40:19.290274Z",
+        "description": "Autotest DP Auto product stored_nfskumkqcf",
+        "identifier": "14c2d649-8cc3-47d4-af6f-f9aef0749f0a",
+        "is_system": false,
+        "label": "ADP",
+        "name": "Auto product stored_nfskumkqcf",
+        "owner": "Big Boss",
+        "state": {
+            "code": "001",
+            "healthy": false,
+            "reason": "Requires configuration."
+        },
+        "urn": "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:ivanh2:data_product:14c2d649-8cc3-47d4-af6f-f9aef0749f0a"
+    },
+    "entity_info": {
+        "contact_ids": [],
+        "links": [],
+        "owner": "Big Boss"
+    },
+    "links": {
+        "children": [],
+        "parents": []
+    },
+    "published": false,
+    "schema_available": true,
+    "spark": null,
+    "table": {
+        "engine": "iceberg",
+        "table_name": "iceberg.neos.\"auto_product_stored_nfskumkqcf\""
+    },
+    "tags": []
+}
+[2023-10-30 10:40:19,945] - INFO       Sending HTTP PUT to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/spark/builder
+[2023-10-30 10:40:19,946] - INFO       Headers: {}
+[2023-10-30 10:40:19,946] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:19,946] - INFO       Body:
+ {
+    "config": {
+        "driver_core_limit": "1200m",
+        "driver_cores": 1,
+        "driver_memory": "512m",
+        "executor_cores": 1,
+        "executor_instances": 1,
+        "executor_memory": "512m",
+        "max_executor_instances": 1,
+        "min_executor_instances": 1
+    },
+    "finalisers": [
+        {
+            "finaliser": "save_dataframe",
+            "input": "select_output",
+            "write_mode": "overwrite"
+        }
+    ],
+    "inputs": {
+        "input_1e5e8774_18d8_4d44_9a54_b01468eb8afc": {
+            "identifier": "1e5e8774-18d8-4d44-9a54-b01468eb8afc",
+            "input_type": "data_product",
+            "preview_limit": 10
+        }
+    },
+    "preview": false,
+    "transformations": [
+        {
+            "columns": [
+                "id",
+                "name",
+                "year"
+            ],
+            "input": "input_1e5e8774_18d8_4d44_9a54_b01468eb8afc",
+            "output": "select_output",
+            "transform": "select_columns"
+        }
+    ]
+}
+[2023-10-30 10:40:20,163] - INFO       Response status code: 200
+[2023-10-30 10:40:20,163] - INFO       Response text:
+ {}
+[2023-10-30 10:40:20,164] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/publish
+[2023-10-30 10:40:20,164] - INFO       Headers: {}
+[2023-10-30 10:40:20,165] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:20,165] - INFO       Body:
+ {}
+[2023-10-30 10:40:20,458] - INFO       Response status code: 200
+[2023-10-30 10:40:20,459] - INFO       Response text:
+ {}
+[2023-10-30 10:40:20,666] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:40:20,667] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:40:20,667] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:20,667] - INFO       Body:
+ {
+    "email": "awalsh@rodriguez-frazier.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "awalsh"
+}
+[2023-10-30 10:40:20,667] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:40:22,001] - INFO       Response status code: 200
+[2023-10-30 10:40:22,002] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "awalsh@rodriguez-frazier.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "597f4c86-393f-41aa-a79d-e48840df479e",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:597f4c86-393f-41aa-a79d-e48840df479e",
+    "username": "awalsh"
+}
+[2023-10-30 10:40:22,170] - INFO       Created user: awalsh@rodriguez-frazier.com, id=597f4c86-393f-41aa-a79d-e48840df479e account=ivanh2
+[2023-10-30 10:40:22,171] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/group/UNDEFINED/principals
+[2023-10-30 10:40:22,172] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:40:22,172] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:22,172] - INFO       Body:
+ {
+    "principals": [
+        "597f4c86-393f-41aa-a79d-e48840df479e"
+    ]
+}
+[2023-10-30 10:40:22,269] - INFO       Response status code: 422
+[2023-10-30 10:40:22,270] - INFO       Response text:
+ {
+    "code": "E001",
+    "debug_message": [
+        {
+            "ctx": {
+                "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `U` at 1"
+            },
+            "input": "UNDEFINED",
+            "loc": [
+                "path",
+                "group_nrn"
+            ],
+            "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `U` at 1",
+            "type": "uuid_parsing",
+            "url": "https://errors.pydantic.dev/2.4/v/uuid_parsing"
+        }
+    ],
+    "message": "Request validation error."
+}
+[2023-10-30 10:40:22,304] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/group/UNDEFINED
+[2023-10-30 10:40:22,304] - INFO       Headers: {}
+[2023-10-30 10:40:22,305] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:22,427] - INFO       Response status code: 422
+[2023-10-30 10:40:22,428] - INFO       Response text:
+ {
+    "code": "E001",
+    "debug_message": [
+        {
+            "ctx": {
+                "error": "invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `U` at 1"
+            },
+            "input": "UNDEFINED",
+            "loc": [
+                "path",
+                "group_nrn"
+            ],
+            "msg": "Input should be a valid UUID, invalid character: expected an optional prefix of `urn:uuid:` followed by [0-9a-fA-F-], found `U` at 1",
+            "type": "uuid_parsing",
+            "url": "https://errors.pydantic.dev/2.4/v/uuid_parsing"
+        }
+    ],
+    "message": "Request validation error."
+}
+[2023-10-30 10:40:22,429] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:40:22,430] - INFO       Headers: {}
+[2023-10-30 10:40:22,430] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MTcsImlhdCI6MTY5ODY1NTIxNywianRpIjoiMTI2NzNiYjMtNzQ4OC00MzEyLWJjMGYtMDY0MzZiMDQwMzZkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWZhNzI4NTUtNzY2Ni00YTg1LTg2YTMtOTcwY2MzNTA2YTA3IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFmYTcyODU1LTc2NjYtNGE4NS04NmEzLTk3MGNjMzUwNmEwNyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Qz2fTBJ2a56hQ9kLn4Tvvm1gknpeuiegD1itpelGhemZLTo9MHHEsmonWnp7UyJrIjCaDsJmaU5mA7spka6UrSycBi0RK3MmWu9Tg-T4Lcd5II9BGejBHJXiqjuoQsXK_kJ6xMjWi0KaNdNtQSZqNMdktkJ1efi4UDamU7VW0eCOYhhLdh_6WKf-SYX_zrvASDUXmGVwJcgZ3i1jC5DxyDtKIxCYyZY51zh5jriCqMRCTdu86vo10RPL37TBMeWL-fsF4v3wB-VB70PNkbcOQhvvkY6jptupGjZ4RgIZkk2_H80ZSSq3Wr8toGUVy8fVfQuWAXfMGUqP9FE3V1A21A'}
+[2023-10-30 10:40:22,430] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:40:22,583] - INFO       Response status code: 200
+[2023-10-30 10:40:22,583] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjIsImlhdCI6MTY5ODY1NTIyMiwianRpIjoiMmM2OTA0OTctYTVmNy00YzIwLWJmZjgtN2E0ZmQyNTM1NTBmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiY2UwOWYzNDUtOTYzNi00OWM2LTgyOTgtZjg3N2U0MGQ0MzU0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImNlMDlmMzQ1LTk2MzYtNDljNi04Mjk4LWY4NzdlNDBkNDM1NCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Gt6CaJwM5aOtpGgEP-HtPm60b6pFdBndW7uVp9q58lOjJ90xJVI142GtQRab04n4nA7xinDd6TSpJVt8fhTpmcszK6Jk-NLI-ps4LeMeGEPkgGYhq86qXbna8vdTp50aCookobHrPJf3QaANtzzx8rqN_E21g0j9fJPyqoe34pxVLPNwZYLQbOO46jvVMw0X9D5DFZLESyg2i_CBQpIoiPTBQNhgfeUgYp4OoCrIyaDvfUQbip4lp6A9mmV-ZOluXJ_cZs0DS_G0CFb4PmtIoAuHpT0M1Db-W3LtvJrPfYKcvbpTJ0_lwva2bF6ERqQ0oe2l7IDDSxKuuaGADj-Ruw",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTcwMjIsImlhdCI6MTY5ODY1NTIyMiwianRpIjoiNTMxOTYwZWItMzE5NC00NGQ3LWFmM2UtNzAzZTRmMWYwMGY2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiJjZTA5ZjM0NS05NjM2LTQ5YzYtODI5OC1mODc3ZTQwZDQzNTQiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2UwOWYzNDUtOTYzNi00OWM2LTgyOTgtZjg3N2U0MGQ0MzU0In0.llTAmi6cPEg3cMNHMTryUDmrEah0NMOqHJy6fuI-FE4",
+    "scope": "openid profile email",
+    "session_state": "ce09f345-9636-49c6-8298-f877e40d4354",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:40:22,584] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/597f4c86-393f-41aa-a79d-e48840df479e/purge
+[2023-10-30 10:40:22,584] - INFO       Headers: {}
+[2023-10-30 10:40:22,585] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjIsImlhdCI6MTY5ODY1NTIyMiwianRpIjoiMmM2OTA0OTctYTVmNy00YzIwLWJmZjgtN2E0ZmQyNTM1NTBmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiY2UwOWYzNDUtOTYzNi00OWM2LTgyOTgtZjg3N2U0MGQ0MzU0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImNlMDlmMzQ1LTk2MzYtNDljNi04Mjk4LWY4NzdlNDBkNDM1NCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Gt6CaJwM5aOtpGgEP-HtPm60b6pFdBndW7uVp9q58lOjJ90xJVI142GtQRab04n4nA7xinDd6TSpJVt8fhTpmcszK6Jk-NLI-ps4LeMeGEPkgGYhq86qXbna8vdTp50aCookobHrPJf3QaANtzzx8rqN_E21g0j9fJPyqoe34pxVLPNwZYLQbOO46jvVMw0X9D5DFZLESyg2i_CBQpIoiPTBQNhgfeUgYp4OoCrIyaDvfUQbip4lp6A9mmV-ZOluXJ_cZs0DS_G0CFb4PmtIoAuHpT0M1Db-W3LtvJrPfYKcvbpTJ0_lwva2bF6ERqQ0oe2l7IDDSxKuuaGADj-Ruw'}
+[2023-10-30 10:40:22,585] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:40:22,752] - INFO       Response status code: 200
+[2023-10-30 10:40:22,753] - INFO       Response text:
+ {}
+[2023-10-30 10:40:22,754] - INFO       [USER CLEANUP] User awalsh@rodriguez-frazier.com, id=597f4c86-393f-41aa-a79d-e48840df479e is deleted.
+[2023-10-30 10:40:22,759] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/publish
+[2023-10-30 10:40:22,760] - INFO       Headers: {}
+[2023-10-30 10:40:22,760] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjIsImlhdCI6MTY5ODY1NTIyMiwianRpIjoiMmM2OTA0OTctYTVmNy00YzIwLWJmZjgtN2E0ZmQyNTM1NTBmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiY2UwOWYzNDUtOTYzNi00OWM2LTgyOTgtZjg3N2U0MGQ0MzU0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImNlMDlmMzQ1LTk2MzYtNDljNi04Mjk4LWY4NzdlNDBkNDM1NCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Gt6CaJwM5aOtpGgEP-HtPm60b6pFdBndW7uVp9q58lOjJ90xJVI142GtQRab04n4nA7xinDd6TSpJVt8fhTpmcszK6Jk-NLI-ps4LeMeGEPkgGYhq86qXbna8vdTp50aCookobHrPJf3QaANtzzx8rqN_E21g0j9fJPyqoe34pxVLPNwZYLQbOO46jvVMw0X9D5DFZLESyg2i_CBQpIoiPTBQNhgfeUgYp4OoCrIyaDvfUQbip4lp6A9mmV-ZOluXJ_cZs0DS_G0CFb4PmtIoAuHpT0M1Db-W3LtvJrPfYKcvbpTJ0_lwva2bF6ERqQ0oe2l7IDDSxKuuaGADj-Ruw'}
+[2023-10-30 10:40:22,943] - INFO       Response status code: 200
+[2023-10-30 10:40:22,943] - INFO       Response text:
+ {}
+[2023-10-30 10:40:22,949] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:40:22,949] - INFO       Headers: {}
+[2023-10-30 10:40:22,950] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjIsImlhdCI6MTY5ODY1NTIyMiwianRpIjoiMmM2OTA0OTctYTVmNy00YzIwLWJmZjgtN2E0ZmQyNTM1NTBmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiY2UwOWYzNDUtOTYzNi00OWM2LTgyOTgtZjg3N2U0MGQ0MzU0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImNlMDlmMzQ1LTk2MzYtNDljNi04Mjk4LWY4NzdlNDBkNDM1NCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Gt6CaJwM5aOtpGgEP-HtPm60b6pFdBndW7uVp9q58lOjJ90xJVI142GtQRab04n4nA7xinDd6TSpJVt8fhTpmcszK6Jk-NLI-ps4LeMeGEPkgGYhq86qXbna8vdTp50aCookobHrPJf3QaANtzzx8rqN_E21g0j9fJPyqoe34pxVLPNwZYLQbOO46jvVMw0X9D5DFZLESyg2i_CBQpIoiPTBQNhgfeUgYp4OoCrIyaDvfUQbip4lp6A9mmV-ZOluXJ_cZs0DS_G0CFb4PmtIoAuHpT0M1Db-W3LtvJrPfYKcvbpTJ0_lwva2bF6ERqQ0oe2l7IDDSxKuuaGADj-Ruw'}
+[2023-10-30 10:40:22,950] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:40:23,137] - INFO       Response status code: 200
+[2023-10-30 10:40:23,138] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTcwMjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiMmRlMDlhNGEtYmIzOS00NDE0LWJjZDItZTEyZTdmM2M0MDBlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiI1ZjI5NDAyNC1hNjE2LTQ3YmYtYTE2Yy0xZmE3YWM2M2E4NTkiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5In0.ZXQ1QGm9skh4_6w-VhrgW3MJJ6YZfnbhmJGA_EJ0b_w",
+    "scope": "openid profile email",
+    "session_state": "5f294024-a616-47bf-a16c-1fa7ac63a859",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:40:23,139] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/link
+[2023-10-30 10:40:23,139] - INFO       Headers: {}
+[2023-10-30 10:40:23,139] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA'}
+[2023-10-30 10:40:23,245] - INFO       Response status code: 200
+[2023-10-30 10:40:23,246] - INFO       Response text:
+ {
+    "children": [],
+    "parents": [
+        {
+            "created_at": "2023-10-30T08:40:17.332735Z",
+            "description": "Autotest DP auto source product 1_hbtmjttnvm",
+            "entity_type": "data_product",
+            "identifier": "1e5e8774-18d8-4d44-9a54-b01468eb8afc",
+            "is_system": false,
+            "label": "ADP",
+            "name": "auto source product 1_hbtmjttnvm",
+            "owner": "Big Boss",
+            "state": {
+                "code": "001",
+                "healthy": false,
+                "reason": "Requires configuration."
+            },
+            "urn": "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:ivanh2:data_product:1e5e8774-18d8-4d44-9a54-b01468eb8afc"
+        }
+    ]
+}
+[2023-10-30 10:40:23,246] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/gateway/v2/link/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a
+[2023-10-30 10:40:23,246] - INFO       Headers: {}
+[2023-10-30 10:40:23,247] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA'}
+[2023-10-30 10:40:23,356] - INFO       Response status code: 200
+[2023-10-30 10:40:23,356] - INFO       Response text:
+ {}
+[2023-10-30 10:40:23,357] - INFO       Sending HTTP PUT to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a/spark/state
+[2023-10-30 10:40:23,357] - INFO       Headers: {}
+[2023-10-30 10:40:23,357] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA'}
+[2023-10-30 10:40:23,358] - INFO       Body:
+ {
+    "state": {
+        "state": "kill_job"
+    }
+}
+[2023-10-30 10:40:23,512] - INFO       Response status code: 200
+[2023-10-30 10:40:23,512] - INFO       Response text:
+ {}
+[2023-10-30 10:40:23,513] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/14c2d649-8cc3-47d4-af6f-f9aef0749f0a
+[2023-10-30 10:40:23,513] - INFO       Headers: {}
+[2023-10-30 10:40:23,514] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA'}
+[2023-10-30 10:40:23,514] - INFO       Params:
+ {
+    "force": true
+}
+[2023-10-30 10:40:24,050] - INFO       Response status code: 200
+[2023-10-30 10:40:24,050] - INFO       Response text:
+ {}
+[2023-10-30 10:40:24,054] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:40:24,055] - INFO       Headers: {}
+[2023-10-30 10:40:24,055] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjMsImlhdCI6MTY5ODY1NTIyMywianRpIjoiYjFlZGI2NDgtNDQwNy00MjAyLTlhZDctNmY3OWFmODhkZTNkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWYyOTQwMjQtYTYxNi00N2JmLWExNmMtMWZhN2FjNjNhODU5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVmMjk0MDI0LWE2MTYtNDdiZi1hMTZjLTFmYTdhYzYzYTg1OSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.C5ksiBsLYZFpYecy6wgX2Lnj9-AhGSn2-YChTxzQgcVDl2LapQpaS8YG5Ev5Z5qsl1fTY5jceqZw0YK_48mmPWlf84YivC1RWDpcW98r87icj2FaAjcNhgy024JzVAZGrUhic1nTwjoz5bQzNJgqPzmwwXjW25bisK9fN6tskze_FeusawzuOD3jQ0Z9fehiut09JyESXy2P5PUPJO-FVoY6_-yQlr8SnXT4EpHM2NxqvuKX8XIRuJusA5n8GRtqCTpfH4s78H1-W5IH5Hoqw-Cnb3LWbO7YKpNaFy_DcFCkoQlML_9CuoH5q_vOq-Yh7tcHVSMGQzDexZoKU9k3NA'}
+[2023-10-30 10:40:24,055] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:40:24,210] - INFO       Response status code: 200
+[2023-10-30 10:40:24,210] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjQsImlhdCI6MTY5ODY1NTIyNCwianRpIjoiZmJkYTk2YjgtYzBkNi00N2NlLWI5NGMtNTkwZmIwZDc5ZGQ1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiN2EzOTU2N2EtYzgxNy00NjZjLTg2MTktZGYyMjAzYjJhZGUwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdhMzk1NjdhLWM4MTctNDY2Yy04NjE5LWRmMjIwM2IyYWRlMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.XSdG799Ou2m5OsQ5iDQstowQ0R8rDgRD55NdsMo57Se9q9mre_FVEwtWzTPtJkdfM_7EeU7tO3VYT1HUSQZFs4vokaXqJfGP5OO4zYdLz_ZDudxqoO6NskV7htU-Rm9ZY5SZJYQuU7WOn-0ZeH3UM_ZQpwMX8j8yoiZTQVVcjdR9Sv4uduji2CjoI1euu4D9DFtUG1R5fUvY3rNCi3_ryeUcph9856ma84L6TURuVbYHhLBgvOzQ_dCUoAd-kMHQ6YyMNqFYc7coBfUI_Gj5yJvwAL5L3gJgDHvp4mPB-mh81_Chwt4pkB6eTlCrCIfF3AN7oAwLzT9fe9KwsJxHPQ",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTcwMjQsImlhdCI6MTY5ODY1NTIyNCwianRpIjoiOWM1OGI4YTYtZjI0OC00NTI5LTgzYjMtNzhmZjVkN2EwOWFhIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiI3YTM5NTY3YS1jODE3LTQ2NmMtODYxOS1kZjIyMDNiMmFkZTAiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiN2EzOTU2N2EtYzgxNy00NjZjLTg2MTktZGYyMjAzYjJhZGUwIn0.Z4KHEoox8Om8iZY9VtNR5BI8OvE4zY7gksHHS3euCMQ",
+    "scope": "openid profile email",
+    "session_state": "7a39567a-c817-466c-8619-df2203b2ade0",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:40:24,212] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc/link
+[2023-10-30 10:40:24,212] - INFO       Headers: {}
+[2023-10-30 10:40:24,212] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjQsImlhdCI6MTY5ODY1NTIyNCwianRpIjoiZmJkYTk2YjgtYzBkNi00N2NlLWI5NGMtNTkwZmIwZDc5ZGQ1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiN2EzOTU2N2EtYzgxNy00NjZjLTg2MTktZGYyMjAzYjJhZGUwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdhMzk1NjdhLWM4MTctNDY2Yy04NjE5LWRmMjIwM2IyYWRlMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.XSdG799Ou2m5OsQ5iDQstowQ0R8rDgRD55NdsMo57Se9q9mre_FVEwtWzTPtJkdfM_7EeU7tO3VYT1HUSQZFs4vokaXqJfGP5OO4zYdLz_ZDudxqoO6NskV7htU-Rm9ZY5SZJYQuU7WOn-0ZeH3UM_ZQpwMX8j8yoiZTQVVcjdR9Sv4uduji2CjoI1euu4D9DFtUG1R5fUvY3rNCi3_ryeUcph9856ma84L6TURuVbYHhLBgvOzQ_dCUoAd-kMHQ6YyMNqFYc7coBfUI_Gj5yJvwAL5L3gJgDHvp4mPB-mh81_Chwt4pkB6eTlCrCIfF3AN7oAwLzT9fe9KwsJxHPQ'}
+[2023-10-30 10:40:24,323] - INFO       Response status code: 200
+[2023-10-30 10:40:24,324] - INFO       Response text:
+ {
+    "children": [],
+    "parents": []
+}
+[2023-10-30 10:40:24,324] - INFO       Sending HTTP PUT to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc/spark/state
+[2023-10-30 10:40:24,325] - INFO       Headers: {}
+[2023-10-30 10:40:24,325] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjQsImlhdCI6MTY5ODY1NTIyNCwianRpIjoiZmJkYTk2YjgtYzBkNi00N2NlLWI5NGMtNTkwZmIwZDc5ZGQ1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiN2EzOTU2N2EtYzgxNy00NjZjLTg2MTktZGYyMjAzYjJhZGUwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdhMzk1NjdhLWM4MTctNDY2Yy04NjE5LWRmMjIwM2IyYWRlMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.XSdG799Ou2m5OsQ5iDQstowQ0R8rDgRD55NdsMo57Se9q9mre_FVEwtWzTPtJkdfM_7EeU7tO3VYT1HUSQZFs4vokaXqJfGP5OO4zYdLz_ZDudxqoO6NskV7htU-Rm9ZY5SZJYQuU7WOn-0ZeH3UM_ZQpwMX8j8yoiZTQVVcjdR9Sv4uduji2CjoI1euu4D9DFtUG1R5fUvY3rNCi3_ryeUcph9856ma84L6TURuVbYHhLBgvOzQ_dCUoAd-kMHQ6YyMNqFYc7coBfUI_Gj5yJvwAL5L3gJgDHvp4mPB-mh81_Chwt4pkB6eTlCrCIfF3AN7oAwLzT9fe9KwsJxHPQ'}
+[2023-10-30 10:40:24,325] - INFO       Body:
+ {
+    "state": {
+        "state": "kill_job"
+    }
+}
+[2023-10-30 10:40:24,429] - INFO       Response status code: 400
+[2023-10-30 10:40:24,430] - INFO       Response text:
+ {
+    "code": "ES306",
+    "debug_message": "Invalid action spark:kill_job, builder has not been provided yet.",
+    "message": "Data product missing builder."
+}
+[2023-10-30 10:40:24,430] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/gateway/v2/data_product/1e5e8774-18d8-4d44-9a54-b01468eb8afc
+[2023-10-30 10:40:24,431] - INFO       Headers: {}
+[2023-10-30 10:40:24,431] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTU1MjQsImlhdCI6MTY5ODY1NTIyNCwianRpIjoiZmJkYTk2YjgtYzBkNi00N2NlLWI5NGMtNTkwZmIwZDc5ZGQ1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiN2EzOTU2N2EtYzgxNy00NjZjLTg2MTktZGYyMjAzYjJhZGUwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdhMzk1NjdhLWM4MTctNDY2Yy04NjE5LWRmMjIwM2IyYWRlMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.XSdG799Ou2m5OsQ5iDQstowQ0R8rDgRD55NdsMo57Se9q9mre_FVEwtWzTPtJkdfM_7EeU7tO3VYT1HUSQZFs4vokaXqJfGP5OO4zYdLz_ZDudxqoO6NskV7htU-Rm9ZY5SZJYQuU7WOn-0ZeH3UM_ZQpwMX8j8yoiZTQVVcjdR9Sv4uduji2CjoI1euu4D9DFtUG1R5fUvY3rNCi3_ryeUcph9856ma84L6TURuVbYHhLBgvOzQ_dCUoAd-kMHQ6YyMNqFYc7coBfUI_Gj5yJvwAL5L3gJgDHvp4mPB-mh81_Chwt4pkB6eTlCrCIfF3AN7oAwLzT9fe9KwsJxHPQ'}
+[2023-10-30 10:40:24,431] - INFO       Params:
+ {
+    "force": true
+}
+[2023-10-30 10:40:24,852] - INFO       Response status code: 200
+[2023-10-30 10:40:24,852] - INFO       Response text:
+ {}

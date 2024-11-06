@@ -1,0 +1,2801 @@
+[2023-10-30 10:27:00,176] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:00,176] - INFO       Headers: {}
+[2023-10-30 10:27:00,176] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiYTE5MTQwZDktNTAxOC00NDJmLTg2ZmEtMzcxNjcyOTljYWFhIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiZmZhNWU5YzEtOGIxOS00Mzc2LWEzN2MtMDA5YTIxOTU5MDM5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImZmYTVlOWMxLThiMTktNDM3Ni1hMzdjLTAwOWEyMTk1OTAzOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.LCROvcZcv7A856H4cr-ccn6nbBgYIJvD-LbIvdoRY6DyeO9PwF9f1MooSwTxprLNUnR8GzcqlhmI4tau5uAfeHr4cgToduz2UMEfmJ15tL-uYQgOQynHG85wO2In-9HqLS8MYtYO64FTMHJYjmr7i2dlQfU-n1lldqR3PQBfvvcbuOTsVzjEENoR0Ln7ulIVLnk6kK9D5Z44TLUed6N_3rCWYB8j99Djzw6Tnqi5ky_1UwqrEm80lRqnc9x1JtqiyvHD8w1XesJNEu3qRnMiG3Yc3IgUvPRTBnOHvAJq3wZ5IRn7tYErUi6bGCrZG6Kk5uCdRjq1RbZJzz91rqd_0Q'}
+[2023-10-30 10:27:00,177] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:00,318] - INFO       Response status code: 200
+[2023-10-30 10:27:00,318] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiYjY2NDE0NGQtOTQzYy00NDA1LWE5ZjgtNWIxZWZhZTA3ZTEyIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIxZWQxNWEzNS1hNjVjLTRiZTYtOWM0ZC0yOGQzOTE1ZjlmYmQiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIn0.qmOtJ5P982LSNUWGRwQdOcoKDkjxKMUiTwDwBIgtgyg",
+    "scope": "openid profile email",
+    "session_state": "1ed15a35-a65c-4be6-9c4d-28d3915f9fbd",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:00,570] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:00,571] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:00,571] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:00,571] - INFO       Body:
+ {
+    "email": "millerjustin@gmail.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "fullerchristopher@rice.org"
+}
+[2023-10-30 10:27:00,572] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:01,775] - INFO       Response status code: 200
+[2023-10-30 10:27:01,776] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "millerjustin@gmail.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "483f467a-7806-45f8-bee6-1d5647868e95",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:483f467a-7806-45f8-bee6-1d5647868e95",
+    "username": "fullerchristopher@rice.org"
+}
+[2023-10-30 10:27:01,965] - INFO       Created user: millerjustin@gmail.com, id=483f467a-7806-45f8-bee6-1d5647868e95 account=ivanh2
+[2023-10-30 10:27:02,148] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:02,149] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:02,149] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:02,149] - INFO       Body:
+ {
+    "email": "pshannon@morris.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "christinaconner@yahoo.com"
+}
+[2023-10-30 10:27:02,150] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:03,404] - INFO       Response status code: 200
+[2023-10-30 10:27:03,405] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "pshannon@morris.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:5b39b0d5-1089-4e74-ba00-ea7c2e11cab4",
+    "username": "christinaconner@yahoo.com"
+}
+[2023-10-30 10:27:03,493] - INFO       Created user: pshannon@morris.com, id=5b39b0d5-1089-4e74-ba00-ea7c2e11cab4 account=ivanh2
+[2023-10-30 10:27:03,687] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:03,688] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:03,691] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:03,692] - INFO       Body:
+ {
+    "email": "adamsjason@hotmail.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "denniscastillo@hotmail.com"
+}
+[2023-10-30 10:27:03,693] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:04,875] - INFO       Response status code: 200
+[2023-10-30 10:27:04,875] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "adamsjason@hotmail.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "153cadfe-cb49-4895-b411-98c473b45fae",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:153cadfe-cb49-4895-b411-98c473b45fae",
+    "username": "denniscastillo@hotmail.com"
+}
+[2023-10-30 10:27:04,963] - INFO       Created user: adamsjason@hotmail.com, id=153cadfe-cb49-4895-b411-98c473b45fae account=ivanh2
+[2023-10-30 10:27:05,039] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:05,039] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:05,039] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:05,040] - INFO       Body:
+ {
+    "email": "hwilliams@mitchell-henry.net",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "kreed@gamble.org"
+}
+[2023-10-30 10:27:05,040] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:06,180] - INFO       Response status code: 200
+[2023-10-30 10:27:06,180] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "hwilliams@mitchell-henry.net",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "b16a78e8-61bd-43c2-82e2-4cb8e715a010",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:b16a78e8-61bd-43c2-82e2-4cb8e715a010",
+    "username": "kreed@gamble.org"
+}
+[2023-10-30 10:27:06,270] - INFO       Created user: hwilliams@mitchell-henry.net, id=b16a78e8-61bd-43c2-82e2-4cb8e715a010 account=ivanh2
+[2023-10-30 10:27:06,346] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:06,346] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:06,346] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:06,347] - INFO       Body:
+ {
+    "email": "robertlin@yahoo.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "fgraham@yahoo.com"
+}
+[2023-10-30 10:27:06,347] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:07,501] - INFO       Response status code: 200
+[2023-10-30 10:27:07,502] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "robertlin@yahoo.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:3fb5d57b-0f3a-47b3-8710-cb3703b9c24d",
+    "username": "fgraham@yahoo.com"
+}
+[2023-10-30 10:27:07,591] - INFO       Created user: robertlin@yahoo.com, id=3fb5d57b-0f3a-47b3-8710-cb3703b9c24d account=ivanh2
+[2023-10-30 10:27:07,664] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:07,665] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:07,666] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:07,667] - INFO       Body:
+ {
+    "email": "vazquezmiranda@yahoo.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "edward39@yahoo.com"
+}
+[2023-10-30 10:27:07,667] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:08,939] - INFO       Response status code: 200
+[2023-10-30 10:27:08,939] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "vazquezmiranda@yahoo.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "e487052e-d519-4fe7-9b39-6b034238b849",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:e487052e-d519-4fe7-9b39-6b034238b849",
+    "username": "edward39@yahoo.com"
+}
+[2023-10-30 10:27:09,028] - INFO       Created user: vazquezmiranda@yahoo.com, id=e487052e-d519-4fe7-9b39-6b034238b849 account=ivanh2
+[2023-10-30 10:27:09,104] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:09,104] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:09,105] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:09,105] - INFO       Body:
+ {
+    "email": "nclark@gmail.com",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "rsimpson@gmail.com"
+}
+[2023-10-30 10:27:09,105] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:10,368] - INFO       Response status code: 200
+[2023-10-30 10:27:10,369] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "nclark@gmail.com",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "1cc8c0b2-a984-457a-8422-fe0f83553d71",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:1cc8c0b2-a984-457a-8422-fe0f83553d71",
+    "username": "rsimpson@gmail.com"
+}
+[2023-10-30 10:27:10,457] - INFO       Created user: nclark@gmail.com, id=1cc8c0b2-a984-457a-8422-fe0f83553d71 account=ivanh2
+[2023-10-30 10:27:10,535] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/user
+[2023-10-30 10:27:10,536] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:10,536] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:10,536] - INFO       Body:
+ {
+    "email": "dmarshall@porter.org",
+    "first_name": "First test name",
+    "last_name": "Last test name",
+    "username": "susan59@long.com"
+}
+[2023-10-30 10:27:10,556] - INFO       Params:
+ {
+    "account": "ivanh2"
+}
+[2023-10-30 10:27:11,801] - INFO       Response status code: 200
+[2023-10-30 10:27:11,802] - INFO       Response text:
+ {
+    "account": "ivanh2",
+    "email": "dmarshall@porter.org",
+    "enabled": true,
+    "first_name": "First test name",
+    "identifier": "02dec370-3074-4632-8343-09f42dd0224e",
+    "is_system": false,
+    "last_name": "Last test name",
+    "urn": "nrn:ksa:iam::root:user:02dec370-3074-4632-8343-09f42dd0224e",
+    "username": "susan59@long.com"
+}
+[2023-10-30 10:27:11,892] - INFO       Created user: dmarshall@porter.org, id=02dec370-3074-4632-8343-09f42dd0224e account=ivanh2
+[2023-10-30 10:27:11,894] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:11,894] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:11,895] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:11,895] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "483f467a-7806-45f8-bee6-1d5647868e95",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_483f467a-7806-45f8-bee6-1d5647868e95"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "483f467a-7806-45f8-bee6-1d5647868e95"
+}
+[2023-10-30 10:27:11,971] - INFO       Response status code: 200
+[2023-10-30 10:27:11,972] - INFO       Response text:
+ {}
+[2023-10-30 10:27:11,973] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:11,974] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:11,974] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:11,974] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+}
+[2023-10-30 10:27:12,091] - INFO       Response status code: 200
+[2023-10-30 10:27:12,092] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,093] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,093] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,093] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,093] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "153cadfe-cb49-4895-b411-98c473b45fae",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_153cadfe-cb49-4895-b411-98c473b45fae"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "153cadfe-cb49-4895-b411-98c473b45fae"
+}
+[2023-10-30 10:27:12,166] - INFO       Response status code: 200
+[2023-10-30 10:27:12,167] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,167] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,168] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,168] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,168] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "b16a78e8-61bd-43c2-82e2-4cb8e715a010",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+}
+[2023-10-30 10:27:12,239] - INFO       Response status code: 200
+[2023-10-30 10:27:12,240] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,242] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,243] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,243] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,243] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+}
+[2023-10-30 10:27:12,354] - INFO       Response status code: 200
+[2023-10-30 10:27:12,355] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,356] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,356] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,357] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,357] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "e487052e-d519-4fe7-9b39-6b034238b849",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_e487052e-d519-4fe7-9b39-6b034238b849"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "e487052e-d519-4fe7-9b39-6b034238b849"
+}
+[2023-10-30 10:27:12,430] - INFO       Response status code: 200
+[2023-10-30 10:27:12,430] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,431] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,431] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,432] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,433] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "1cc8c0b2-a984-457a-8422-fe0f83553d71",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_1cc8c0b2-a984-457a-8422-fe0f83553d71"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "1cc8c0b2-a984-457a-8422-fe0f83553d71"
+}
+[2023-10-30 10:27:12,505] - INFO       Response status code: 200
+[2023-10-30 10:27:12,505] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,506] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,506] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,506] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,507] - INFO       Body:
+ {
+    "policy": {
+        "statements": [
+            {
+                "action": [
+                    "data_product:manage"
+                ],
+                "condition": [],
+                "effect": "allow",
+                "principal": "02dec370-3074-4632-8343-09f42dd0224e",
+                "resource": [
+                    "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                ],
+                "sid": "sid_02dec370-3074-4632-8343-09f42dd0224e"
+            }
+        ],
+        "version": "2022-10-01"
+    },
+    "user": "02dec370-3074-4632-8343-09f42dd0224e"
+}
+[2023-10-30 10:27:12,618] - INFO       Response status code: 200
+[2023-10-30 10:27:12,619] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,621] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/iam/policy/users
+[2023-10-30 10:27:12,621] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,622] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,622] - INFO       Params:
+ {
+    "page": 1,
+    "page_size": 50
+}
+[2023-10-30 10:27:12,726] - INFO       Response status code: 200
+[2023-10-30 10:27:12,728] - INFO       Response text:
+ {
+    "user_policies": [
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "02dec370-3074-4632-8343-09f42dd0224e",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_02dec370-3074-4632-8343-09f42dd0224e"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "02dec370-3074-4632-8343-09f42dd0224e"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "1cc8c0b2-a984-457a-8422-fe0f83553d71",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_1cc8c0b2-a984-457a-8422-fe0f83553d71"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "1cc8c0b2-a984-457a-8422-fe0f83553d71"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "e487052e-d519-4fe7-9b39-6b034238b849",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_e487052e-d519-4fe7-9b39-6b034238b849"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "e487052e-d519-4fe7-9b39-6b034238b849"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "b16a78e8-61bd-43c2-82e2-4cb8e715a010",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "153cadfe-cb49-4895-b411-98c473b45fae",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_153cadfe-cb49-4895-b411-98c473b45fae"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "153cadfe-cb49-4895-b411-98c473b45fae"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "483f467a-7806-45f8-bee6-1d5647868e95",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_483f467a-7806-45f8-bee6-1d5647868e95"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "483f467a-7806-45f8-bee6-1d5647868e95"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "8af94d40-1abd-4726-8e8b-63c432eabfd6",
+                        "resource": [
+                            "urn:ksa:core:3e00ad6e-b9fb-4959-834d-1110971f6e19:ivanh2:data_product:e4968333-360c-4a7d-a6e5-c835bd3a4c09"
+                        ],
+                        "sid": "_e4968333-360c-4a7d-a6e5-c835bd3a4c09-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "8af94d40-1abd-4726-8e8b-63c432eabfd6"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "34f542b2-ea7a-43f0-9182-970876123074",
+                        "resource": [
+                            "urn:ksa:core:6c13cc8e-b7ff-4c9c-a58c-bd53df95a7e7:ivanh2:data_product:92f201e6-910a-492b-81e0-ac12acf0c531"
+                        ],
+                        "sid": "_92f201e6-910a-492b-81e0-ac12acf0c531-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "34f542b2-ea7a-43f0-9182-970876123074"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "urn:ksa:core:a2e241e3-028f-4902-8faa-84dc214aca9a:root:data_product:*"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a2e241e3-028f-4902-8faa-84dc214aca9a"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "urn:ksa:core:d17fa105-df86-4b16-8463-acc03206805f:root:data_product:*"
+                        ],
+                        "sid": "core-core_vdnxvomlre-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_vdnxvomlre-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "urn:ksa:registry::root:core:d17fa105-df86-4b16-8463-acc03206805f"
+                        ],
+                        "sid": "core-core_vdnxvomlre-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "urn:ksa:core:950c59b0-b057-4dbf-80a2-75984cd0460c:root:data_product:*"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "urn:ksa:registry::root:core:950c59b0-b057-4dbf-80a2-75984cd0460c"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "7e8f9aca-0c77-41f9-b4c8-606da90afab8"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "urn:ksa:core:e269eb3d-3666-4ffa-90a0-ed4aa35dbdf0:root:data_product:*"
+                        ],
+                        "sid": "core-core_gozlykvjsm-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_gozlykvjsm-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "urn:ksa:registry::root:core:e269eb3d-3666-4ffa-90a0-ed4aa35dbdf0"
+                        ],
+                        "sid": "core-core_gozlykvjsm-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "914fcf54-f3a8-49fd-95f2-b1c65af365df"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "urn:ksa:core:b6026278-c5c2-4406-8340-ccd1fbb0eef5:root:data_product:*"
+                        ],
+                        "sid": "core-o-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-o-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "urn:ksa:registry::root:core:b6026278-c5c2-4406-8340-ccd1fbb0eef5"
+                        ],
+                        "sid": "core-o-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "4ee2fd66-4050-4e81-a885-ff5e96f013ff"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "urn:ksa:core:a1dc9743-20a2-4741-b55f-d71cc0ab6cf8:root:data_product:*"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a1dc9743-20a2-4741-b55f-d71cc0ab6cf8"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "d94e8675-43f3-44f8-aa81-b4a7deed1c28"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3847d1b0-c58c-4c1e-81cf-943f9a736254",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "['*']*"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3847d1b0-c58c-4c1e-81cf-943f9a736254"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "policy:create"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "b7c74f60-147b-4730-b434-44945f464b8b",
+                        "resource": [
+                            "urn:ksa:iam::root:policy"
+                        ],
+                        "sid": "['policy:create']urn:ksa:iam::root:policy"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "b7c74f60-147b-4730-b434-44945f464b8b"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "60d1f176-afb3-43e8-a1ac-0845c0d9da6d",
+                        "resource": [
+                            "urn:ksa:core:278d0bf8-7e0a-4ef1-a453-ffa7d9e089ae:ivanh2:data_product:a7801fd0-fd2f-4c5b-9b72-d28ba9d93c85"
+                        ],
+                        "sid": "_a7801fd0-fd2f-4c5b-9b72-d28ba9d93c85-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "60d1f176-afb3-43e8-a1ac-0845c0d9da6d"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "62978ae6-2da1-4551-9f9c-a9e0d8fbba7b",
+                        "resource": [
+                            "urn:ksa:core:1142fd65-f714-4675-a512-ac4ee88f9871:ivanh2:data_product:f12c5b4f-4d80-4acb-960d-90d6d659d38f"
+                        ],
+                        "sid": "_f12c5b4f-4d80-4acb-960d-90d6d659d38f-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "62978ae6-2da1-4551-9f9c-a9e0d8fbba7b"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "urn:ksa:core:9335e123-305b-4e91-90af-f7112b3eed5d:root:data_product:*"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "urn:ksa:registry::root:core:9335e123-305b-4e91-90af-f7112b3eed5d"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "bb7875eb-58d2-4fea-a49d-583982d411eb"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "urn:ksa:core:9c66c287-2c03-4329-9275-e83f9bf61f1e:root:data_product:*"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "urn:ksa:registry::root:core:9c66c287-2c03-4329-9275-e83f9bf61f1e"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "99ef7def-f21a-4a91-832b-3d91549984e0"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "urn:ksa:core:6e0ecd7e-7d45-4ab7-b8d9-99d85128b800:root:data_product:*"
+                        ],
+                        "sid": "core-core_byhozxalcl-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_byhozxalcl-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "urn:ksa:registry::root:core:6e0ecd7e-7d45-4ab7-b8d9-99d85128b800"
+                        ],
+                        "sid": "core-core_byhozxalcl-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "cc666e2d-d059-4596-b076-05a01f3e7aff"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "urn:ksa:core:e96030cf-e87a-4e4f-b55c-cc48572d1abc:root:data_product:*"
+                        ],
+                        "sid": "core-core_tkyotddjqp-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_tkyotddjqp-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "urn:ksa:registry::root:core:e96030cf-e87a-4e4f-b55c-cc48572d1abc"
+                        ],
+                        "sid": "core-core_tkyotddjqp-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "051e2567-9f30-42ea-90df-afeecb16fbd8"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "urn:ksa:core:a14c30ae-4289-4d18-ac8d-065c4b289b1f:root:data_product:*"
+                        ],
+                        "sid": "core-w-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-w-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a14c30ae-4289-4d18-ac8d-065c4b289b1f"
+                        ],
+                        "sid": "core-w-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "urn:ksa:core:28470eae-3780-4913-8361-e6a4d4bb9c3d:root:data_product:*"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "urn:ksa:registry::root:core:28470eae-3780-4913-8361-e6a4d4bb9c3d"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "71d49919-4a6b-408e-b565-23a5096397d2"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "eafb0b4d-11a0-45ed-9084-5f69ab1345e0",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "['*']*"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "eafb0b4d-11a0-45ed-9084-5f69ab1345e0"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "policy:create"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "28cd1130-d79e-4856-ad5c-42ab132b31cb",
+                        "resource": [
+                            "urn:ksa:iam::root:policy"
+                        ],
+                        "sid": "['policy:create']urn:ksa:iam::root:policy"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "28cd1130-d79e-4856-ad5c-42ab132b31cb"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "minio:read",
+                            "minio:write"
+                        ],
+                        "condition": [
+                            ""
+                        ],
+                        "effect": "allow",
+                        "principal": "1ce4c095-ee3a-4eeb-89ec-c5cd1507ad37",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "minio"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "1ce4c095-ee3a-4eeb-89ec-c5cd1507ad37"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "f3e75406-ffcd-4e0d-889c-1b27ee5c7c56",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "SID_SUPERADMIN"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "f3e75406-ffcd-4e0d-889c-1b27ee5c7c56"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "account:member"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "85adf908-3773-45a0-9794-82e85a8bc82f",
+                        "resource": [
+                            "nrn:ksa:iam::root:account:root"
+                        ],
+                        "sid": "root-membership"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "85adf908-3773-45a0-9794-82e85a8bc82f"
+        }
+    ]
+}
+[2023-10-30 10:27:12,746] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/iam/policy/users
+[2023-10-30 10:27:12,746] - INFO       Headers: {'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:27:12,747] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,747] - INFO       Params:
+ {
+    "page": 1,
+    "page_size": 50
+}
+[2023-10-30 10:27:12,826] - INFO       Response status code: 200
+[2023-10-30 10:27:12,829] - INFO       Response text:
+ {
+    "user_policies": [
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "02dec370-3074-4632-8343-09f42dd0224e",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_02dec370-3074-4632-8343-09f42dd0224e"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "02dec370-3074-4632-8343-09f42dd0224e"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "1cc8c0b2-a984-457a-8422-fe0f83553d71",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_1cc8c0b2-a984-457a-8422-fe0f83553d71"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "1cc8c0b2-a984-457a-8422-fe0f83553d71"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "e487052e-d519-4fe7-9b39-6b034238b849",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_e487052e-d519-4fe7-9b39-6b034238b849"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "e487052e-d519-4fe7-9b39-6b034238b849"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "b16a78e8-61bd-43c2-82e2-4cb8e715a010",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "153cadfe-cb49-4895-b411-98c473b45fae",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_153cadfe-cb49-4895-b411-98c473b45fae"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "153cadfe-cb49-4895-b411-98c473b45fae"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "data_product:manage"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "483f467a-7806-45f8-bee6-1d5647868e95",
+                        "resource": [
+                            "urn:ksa:core:1f246dfd-c528-4194-9d73-c1796eecc673:root:data_product:*"
+                        ],
+                        "sid": "sid_483f467a-7806-45f8-bee6-1d5647868e95"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "483f467a-7806-45f8-bee6-1d5647868e95"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "8af94d40-1abd-4726-8e8b-63c432eabfd6",
+                        "resource": [
+                            "urn:ksa:core:3e00ad6e-b9fb-4959-834d-1110971f6e19:ivanh2:data_product:e4968333-360c-4a7d-a6e5-c835bd3a4c09"
+                        ],
+                        "sid": "_e4968333-360c-4a7d-a6e5-c835bd3a4c09-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "8af94d40-1abd-4726-8e8b-63c432eabfd6"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "34f542b2-ea7a-43f0-9182-970876123074",
+                        "resource": [
+                            "urn:ksa:core:6c13cc8e-b7ff-4c9c-a58c-bd53df95a7e7:ivanh2:data_product:92f201e6-910a-492b-81e0-ac12acf0c531"
+                        ],
+                        "sid": "_92f201e6-910a-492b-81e0-ac12acf0c531-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "34f542b2-ea7a-43f0-9182-970876123074"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "urn:ksa:core:a2e241e3-028f-4902-8faa-84dc214aca9a:root:data_product:*"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a2e241e3-028f-4902-8faa-84dc214aca9a"
+                        ],
+                        "sid": "core-core_dhwqpuazlm-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3c270fbd-b5da-4119-85bb-0cb12ddeb61f"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "urn:ksa:core:d17fa105-df86-4b16-8463-acc03206805f:root:data_product:*"
+                        ],
+                        "sid": "core-core_vdnxvomlre-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_vdnxvomlre-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2",
+                        "resource": [
+                            "urn:ksa:registry::root:core:d17fa105-df86-4b16-8463-acc03206805f"
+                        ],
+                        "sid": "core-core_vdnxvomlre-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "30cf1f07-2cbb-49d4-a80a-6c3398cf8aa2"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "urn:ksa:core:950c59b0-b057-4dbf-80a2-75984cd0460c:root:data_product:*"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "7e8f9aca-0c77-41f9-b4c8-606da90afab8",
+                        "resource": [
+                            "urn:ksa:registry::root:core:950c59b0-b057-4dbf-80a2-75984cd0460c"
+                        ],
+                        "sid": "core-core_ebymzlkhsn-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "7e8f9aca-0c77-41f9-b4c8-606da90afab8"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "urn:ksa:core:e269eb3d-3666-4ffa-90a0-ed4aa35dbdf0:root:data_product:*"
+                        ],
+                        "sid": "core-core_gozlykvjsm-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_gozlykvjsm-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "914fcf54-f3a8-49fd-95f2-b1c65af365df",
+                        "resource": [
+                            "urn:ksa:registry::root:core:e269eb3d-3666-4ffa-90a0-ed4aa35dbdf0"
+                        ],
+                        "sid": "core-core_gozlykvjsm-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "914fcf54-f3a8-49fd-95f2-b1c65af365df"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "urn:ksa:core:b6026278-c5c2-4406-8340-ccd1fbb0eef5:root:data_product:*"
+                        ],
+                        "sid": "core-o-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-o-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "4ee2fd66-4050-4e81-a885-ff5e96f013ff",
+                        "resource": [
+                            "urn:ksa:registry::root:core:b6026278-c5c2-4406-8340-ccd1fbb0eef5"
+                        ],
+                        "sid": "core-o-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "4ee2fd66-4050-4e81-a885-ff5e96f013ff"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "urn:ksa:core:a1dc9743-20a2-4741-b55f-d71cc0ab6cf8:root:data_product:*"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "d94e8675-43f3-44f8-aa81-b4a7deed1c28",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a1dc9743-20a2-4741-b55f-d71cc0ab6cf8"
+                        ],
+                        "sid": "core-ubvpnihwtdugcfkfintyeslktedujzcaecgkzinjnaovxxtihhohjziakmczwdmvnosmhmstvaidpevkjwyesylymtnhsvfrwluhdkgxwqqmjnytsqefmoeirsszkkcwanrmgdqoryibbhtajtwzhhzxoyhkdkikbqgmhrogwmbfcabqbxhxifkfgnxupjnkjzlxcdhd-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "d94e8675-43f3-44f8-aa81-b4a7deed1c28"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "3847d1b0-c58c-4c1e-81cf-943f9a736254",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "['*']*"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "3847d1b0-c58c-4c1e-81cf-943f9a736254"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "policy:create"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "b7c74f60-147b-4730-b434-44945f464b8b",
+                        "resource": [
+                            "urn:ksa:iam::root:policy"
+                        ],
+                        "sid": "['policy:create']urn:ksa:iam::root:policy"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "b7c74f60-147b-4730-b434-44945f464b8b"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "60d1f176-afb3-43e8-a1ac-0845c0d9da6d",
+                        "resource": [
+                            "urn:ksa:core:278d0bf8-7e0a-4ef1-a453-ffa7d9e089ae:ivanh2:data_product:a7801fd0-fd2f-4c5b-9b72-d28ba9d93c85"
+                        ],
+                        "sid": "_a7801fd0-fd2f-4c5b-9b72-d28ba9d93c85-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "60d1f176-afb3-43e8-a1ac-0845c0d9da6d"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "62978ae6-2da1-4551-9f9c-a9e0d8fbba7b",
+                        "resource": [
+                            "urn:ksa:core:1142fd65-f714-4675-a512-ac4ee88f9871:ivanh2:data_product:f12c5b4f-4d80-4acb-960d-90d6d659d38f"
+                        ],
+                        "sid": "_f12c5b4f-4d80-4acb-960d-90d6d659d38f-subscription"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "62978ae6-2da1-4551-9f9c-a9e0d8fbba7b"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "urn:ksa:core:9335e123-305b-4e91-90af-f7112b3eed5d:root:data_product:*"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "bb7875eb-58d2-4fea-a49d-583982d411eb",
+                        "resource": [
+                            "urn:ksa:registry::root:core:9335e123-305b-4e91-90af-f7112b3eed5d"
+                        ],
+                        "sid": "core-core_ecvpogqgwj-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "bb7875eb-58d2-4fea-a49d-583982d411eb"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "urn:ksa:core:9c66c287-2c03-4329-9275-e83f9bf61f1e:root:data_product:*"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "99ef7def-f21a-4a91-832b-3d91549984e0",
+                        "resource": [
+                            "urn:ksa:registry::root:core:9c66c287-2c03-4329-9275-e83f9bf61f1e"
+                        ],
+                        "sid": "core-core_dxxfuqqwbl-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "99ef7def-f21a-4a91-832b-3d91549984e0"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "urn:ksa:core:6e0ecd7e-7d45-4ab7-b8d9-99d85128b800:root:data_product:*"
+                        ],
+                        "sid": "core-core_byhozxalcl-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_byhozxalcl-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "cc666e2d-d059-4596-b076-05a01f3e7aff",
+                        "resource": [
+                            "urn:ksa:registry::root:core:6e0ecd7e-7d45-4ab7-b8d9-99d85128b800"
+                        ],
+                        "sid": "core-core_byhozxalcl-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "cc666e2d-d059-4596-b076-05a01f3e7aff"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "urn:ksa:core:e96030cf-e87a-4e4f-b55c-cc48572d1abc:root:data_product:*"
+                        ],
+                        "sid": "core-core_tkyotddjqp-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-core_tkyotddjqp-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "051e2567-9f30-42ea-90df-afeecb16fbd8",
+                        "resource": [
+                            "urn:ksa:registry::root:core:e96030cf-e87a-4e4f-b55c-cc48572d1abc"
+                        ],
+                        "sid": "core-core_tkyotddjqp-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "051e2567-9f30-42ea-90df-afeecb16fbd8"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "urn:ksa:core:a14c30ae-4289-4d18-ac8d-065c4b289b1f:root:data_product:*"
+                        ],
+                        "sid": "core-w-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-w-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785",
+                        "resource": [
+                            "urn:ksa:registry::root:core:a14c30ae-4289-4d18-ac8d-065c4b289b1f"
+                        ],
+                        "sid": "core-w-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "39f7e54e-61bd-403b-a2ba-1d4bdd36e785"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "product:consume"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "urn:ksa:core:28470eae-3780-4913-8361-e6a4d4bb9c3d:root:data_product:*"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-consume"
+                    },
+                    {
+                        "action": [
+                            "auth:validate"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "nrn:ksa:iam::root:signature",
+                            "nrn:ksa:iam::root:token"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-iam"
+                    },
+                    {
+                        "action": [
+                            "core:announce",
+                            "product:register",
+                            "product:remove",
+                            "product:update"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "71d49919-4a6b-408e-b565-23a5096397d2",
+                        "resource": [
+                            "urn:ksa:registry::root:core:28470eae-3780-4913-8361-e6a4d4bb9c3d"
+                        ],
+                        "sid": "core-pytpzdsrvfxkcvccloqorjtuevisphzbkskipyuidqymbzvcwkqeowjrcngkomexnxaxpzjosmrfezsbdzflqpafvfnhicbjdrzmgztepcybvhifeohvboseiwmskzaqacxaxacqadbzijkbrwefsbdrftecjmmhufqqxikhjeuzdbcahxiypfmoondywxtsccrxeoqj-registry"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "71d49919-4a6b-408e-b565-23a5096397d2"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "eafb0b4d-11a0-45ed-9084-5f69ab1345e0",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "['*']*"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "eafb0b4d-11a0-45ed-9084-5f69ab1345e0"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "policy:create"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "28cd1130-d79e-4856-ad5c-42ab132b31cb",
+                        "resource": [
+                            "urn:ksa:iam::root:policy"
+                        ],
+                        "sid": "['policy:create']urn:ksa:iam::root:policy"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "28cd1130-d79e-4856-ad5c-42ab132b31cb"
+        },
+        {
+            "is_system": false,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "minio:read",
+                            "minio:write"
+                        ],
+                        "condition": [
+                            ""
+                        ],
+                        "effect": "allow",
+                        "principal": "1ce4c095-ee3a-4eeb-89ec-c5cd1507ad37",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "minio"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "1ce4c095-ee3a-4eeb-89ec-c5cd1507ad37"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "*"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "f3e75406-ffcd-4e0d-889c-1b27ee5c7c56",
+                        "resource": [
+                            "*"
+                        ],
+                        "sid": "SID_SUPERADMIN"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "f3e75406-ffcd-4e0d-889c-1b27ee5c7c56"
+        },
+        {
+            "is_system": true,
+            "policy": {
+                "statements": [
+                    {
+                        "action": [
+                            "account:member"
+                        ],
+                        "condition": [],
+                        "effect": "allow",
+                        "principal": "85adf908-3773-45a0-9794-82e85a8bc82f",
+                        "resource": [
+                            "nrn:ksa:iam::root:account:root"
+                        ],
+                        "sid": "root-membership"
+                    }
+                ],
+                "version": "2022-10-01"
+            },
+            "user": "85adf908-3773-45a0-9794-82e85a8bc82f"
+        }
+    ]
+}
+[2023-10-30 10:27:12,847] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,847] - INFO       Headers: {}
+[2023-10-30 10:27:12,848] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,850] - INFO       Params:
+ {
+    "user_nrn": "483f467a-7806-45f8-bee6-1d5647868e95"
+}
+[2023-10-30 10:27:12,921] - INFO       Response status code: 200
+[2023-10-30 10:27:12,921] - INFO       Response text:
+ {}
+[2023-10-30 10:27:12,922] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:12,922] - INFO       Headers: {}
+[2023-10-30 10:27:12,923] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:12,925] - INFO       Params:
+ {
+    "user_nrn": "5b39b0d5-1089-4e74-ba00-ea7c2e11cab4"
+}
+[2023-10-30 10:27:13,036] - INFO       Response status code: 200
+[2023-10-30 10:27:13,037] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,037] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,038] - INFO       Headers: {}
+[2023-10-30 10:27:13,039] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,039] - INFO       Params:
+ {
+    "user_nrn": "153cadfe-cb49-4895-b411-98c473b45fae"
+}
+[2023-10-30 10:27:13,115] - INFO       Response status code: 200
+[2023-10-30 10:27:13,115] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,116] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,116] - INFO       Headers: {}
+[2023-10-30 10:27:13,116] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,117] - INFO       Params:
+ {
+    "user_nrn": "b16a78e8-61bd-43c2-82e2-4cb8e715a010"
+}
+[2023-10-30 10:27:13,192] - INFO       Response status code: 200
+[2023-10-30 10:27:13,193] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,194] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,194] - INFO       Headers: {}
+[2023-10-30 10:27:13,194] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,195] - INFO       Params:
+ {
+    "user_nrn": "3fb5d57b-0f3a-47b3-8710-cb3703b9c24d"
+}
+[2023-10-30 10:27:13,307] - INFO       Response status code: 200
+[2023-10-30 10:27:13,308] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,309] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,309] - INFO       Headers: {}
+[2023-10-30 10:27:13,309] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,309] - INFO       Params:
+ {
+    "user_nrn": "e487052e-d519-4fe7-9b39-6b034238b849"
+}
+[2023-10-30 10:27:13,381] - INFO       Response status code: 200
+[2023-10-30 10:27:13,381] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,382] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,383] - INFO       Headers: {}
+[2023-10-30 10:27:13,384] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,384] - INFO       Params:
+ {
+    "user_nrn": "1cc8c0b2-a984-457a-8422-fe0f83553d71"
+}
+[2023-10-30 10:27:13,455] - INFO       Response status code: 200
+[2023-10-30 10:27:13,455] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,456] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,456] - INFO       Headers: {}
+[2023-10-30 10:27:13,457] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,457] - INFO       Params:
+ {
+    "user_nrn": "02dec370-3074-4632-8343-09f42dd0224e"
+}
+[2023-10-30 10:27:13,573] - INFO       Response status code: 200
+[2023-10-30 10:27:13,573] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,576] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/policy/user
+[2023-10-30 10:27:13,576] - INFO       Headers: {}
+[2023-10-30 10:27:13,577] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,577] - INFO       Params:
+ {
+    "user_nrn": "02dec370-3074-4632-8343-09f42dd0224e"
+}
+[2023-10-30 10:27:13,653] - INFO       Response status code: 404
+[2023-10-30 10:27:13,654] - INFO       Response text:
+ {
+    "code": "I002",
+    "debug_message": "Policy not found.",
+    "message": "Policy not found."
+}
+[2023-10-30 10:27:13,658] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:13,660] - INFO       Headers: {}
+[2023-10-30 10:27:13,669] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MjAsImlhdCI6MTY5ODY1NDQyMCwianRpIjoiNzFiYWUzNzQtYTZlYS00NTdhLWE1YzEtZWQyMjFhM2QwMTg4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWVkMTVhMzUtYTY1Yy00YmU2LTljNGQtMjhkMzkxNWY5ZmJkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlZDE1YTM1LWE2NWMtNGJlNi05YzRkLTI4ZDM5MTVmOWZiZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.YOfGJRCPGzc7iUzG0YENzBWMXZoKqbA_I-uZqSsF_DYLb8ZuMczUsznJUCETba3JqrPrwSkyIgOB6AE_QqK9GjA8U7qf71mPB_TlSi_cxuSP8mtxQBOFtwzs4EJoNLr3YxueU-yIpSqJ2rxwKeWujEkcgU0-MBJOxNFlLEBzlC6Nac-YnqgrTA0iedpWhuW5a98FdSQRydJ1uASnVSEKC8xcW-wuTpTRrw-tbsrNTepz5HZOtkhNSOACpTa18OjX4OC6FbT6WaONexQiDovyAEJitxbJcBeKO4XCw-8mlQbKvmizDYHMi4Oo7yrzF5RAwlMPHWshK4sVYplBaYbKNA'}
+[2023-10-30 10:27:13,670] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:13,839] - INFO       Response status code: 200
+[2023-10-30 10:27:13,839] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzMsImlhdCI6MTY5ODY1NDQzMywianRpIjoiZDJmNWQwNzEtZTRlZS00YjJjLWIzYTUtM2FmZDg2MTE2ZTFlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNjBhNDMzYzQtOGIwNy00YzAyLTk0NjQtNGUxMzdhMjFmNTg4IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjYwYTQzM2M0LThiMDctNGMwMi05NDY0LTRlMTM3YTIxZjU4OCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.ZKawUirnHjsKFGwoJyQy1paR5Y7pqYGCHMUCI8HbHO4QdrNEiVE96bv2QMIGU6iSWZZOQcqtJzVfSp7gF9x-s2s34pFYce-okTnYayxVu_usg2EuYNeSUPByc-Br06_4MBlfkPYWB88i986UFZRnHkUvgso8gW1IcrACgd_b9p5xvElkj-QNB7YByWC79p3b5ZZthBvVsnhW8IWMPp3D0vbii4cwNtE2SFeLUdLqhqZenEMlnHhZ8DPcDKkWYnmAZcbfP2XFneTvKLZ-UINfur3B6O8Yc1yg7W0OwrBWUZ1pOF6egPUaeKetKRzSmKT-tjmFOjgQM7Fxil5nzgZR7g",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzMsImlhdCI6MTY5ODY1NDQzMywianRpIjoiYTc1NWZkOWMtMTg3Ny00NzAwLWE3NjUtZTczZjI3Mjc2ZTMyIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiI2MGE0MzNjNC04YjA3LTRjMDItOTQ2NC00ZTEzN2EyMWY1ODgiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNjBhNDMzYzQtOGIwNy00YzAyLTk0NjQtNGUxMzdhMjFmNTg4In0.sRZ6NS88kChAD05R3wxCuvUo0BUfK9ArCOwUJda0G70",
+    "scope": "openid profile email",
+    "session_state": "60a433c4-8b07-4c02-9464-4e137a21f588",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:13,840] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/483f467a-7806-45f8-bee6-1d5647868e95/purge
+[2023-10-30 10:27:13,840] - INFO       Headers: {}
+[2023-10-30 10:27:13,840] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzMsImlhdCI6MTY5ODY1NDQzMywianRpIjoiZDJmNWQwNzEtZTRlZS00YjJjLWIzYTUtM2FmZDg2MTE2ZTFlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNjBhNDMzYzQtOGIwNy00YzAyLTk0NjQtNGUxMzdhMjFmNTg4IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjYwYTQzM2M0LThiMDctNGMwMi05NDY0LTRlMTM3YTIxZjU4OCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.ZKawUirnHjsKFGwoJyQy1paR5Y7pqYGCHMUCI8HbHO4QdrNEiVE96bv2QMIGU6iSWZZOQcqtJzVfSp7gF9x-s2s34pFYce-okTnYayxVu_usg2EuYNeSUPByc-Br06_4MBlfkPYWB88i986UFZRnHkUvgso8gW1IcrACgd_b9p5xvElkj-QNB7YByWC79p3b5ZZthBvVsnhW8IWMPp3D0vbii4cwNtE2SFeLUdLqhqZenEMlnHhZ8DPcDKkWYnmAZcbfP2XFneTvKLZ-UINfur3B6O8Yc1yg7W0OwrBWUZ1pOF6egPUaeKetKRzSmKT-tjmFOjgQM7Fxil5nzgZR7g'}
+[2023-10-30 10:27:13,841] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:13,977] - INFO       Response status code: 200
+[2023-10-30 10:27:13,978] - INFO       Response text:
+ {}
+[2023-10-30 10:27:13,981] - INFO       [USER CLEANUP] User millerjustin@gmail.com, id=483f467a-7806-45f8-bee6-1d5647868e95 is deleted.
+[2023-10-30 10:27:13,981] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:13,982] - INFO       Headers: {}
+[2023-10-30 10:27:13,982] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzMsImlhdCI6MTY5ODY1NDQzMywianRpIjoiZDJmNWQwNzEtZTRlZS00YjJjLWIzYTUtM2FmZDg2MTE2ZTFlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNjBhNDMzYzQtOGIwNy00YzAyLTk0NjQtNGUxMzdhMjFmNTg4IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjYwYTQzM2M0LThiMDctNGMwMi05NDY0LTRlMTM3YTIxZjU4OCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.ZKawUirnHjsKFGwoJyQy1paR5Y7pqYGCHMUCI8HbHO4QdrNEiVE96bv2QMIGU6iSWZZOQcqtJzVfSp7gF9x-s2s34pFYce-okTnYayxVu_usg2EuYNeSUPByc-Br06_4MBlfkPYWB88i986UFZRnHkUvgso8gW1IcrACgd_b9p5xvElkj-QNB7YByWC79p3b5ZZthBvVsnhW8IWMPp3D0vbii4cwNtE2SFeLUdLqhqZenEMlnHhZ8DPcDKkWYnmAZcbfP2XFneTvKLZ-UINfur3B6O8Yc1yg7W0OwrBWUZ1pOF6egPUaeKetKRzSmKT-tjmFOjgQM7Fxil5nzgZR7g'}
+[2023-10-30 10:27:13,982] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:14,134] - INFO       Response status code: 200
+[2023-10-30 10:27:14,134] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiY2Y2Yzc2ZTktYzNjMi00NDA5LWE3ZTYtZjgwNGZhMzRhMDk3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWUzY2Q1NGEtMjkyNC00ZTQ1LTg0MzUtZWYyNTVmMmU1NzhhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVlM2NkNTRhLTI5MjQtNGU0NS04NDM1LWVmMjU1ZjJlNTc4YSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.KudgTivo-glyPnK1b2NEBP6nRzlhAt68CO7vZ3eC7KjGYM6bFmtlUDPH3p9zplm6g9T32euQTqT06CmE5uQvh3wV8YYtw9mLQFz3Y6v4c4LbE5eNEU1NxvcYJv5klNE3hhGnQZ55YOebUbT9k5jc4f12fNFTtidyZggYXaMlchvHSZ8rzAMdPmqLQP4f7QyExDy-6aM_-4JuY1vzAIWS_SreaIYdbHqtP7qvfY2IwX-odQyTdltg78ZFQav2Dkr9_rRYyepdNSIeRzMTuAIRvqaYJWBvnLUHFaUsx6qZdjS8547X3oYVb3PPE3Xvrkj0_f-Kgm1UHX6nhq3S12tQHQ",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiMTdlODE0MTYtOTgyNi00Y2EyLTg1YzgtOTA0NTc0ODdmYTFmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiI1ZTNjZDU0YS0yOTI0LTRlNDUtODQzNS1lZjI1NWYyZTU3OGEiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNWUzY2Q1NGEtMjkyNC00ZTQ1LTg0MzUtZWYyNTVmMmU1NzhhIn0.RI-PPvbAqBr1nc-V1CTJQOrx6fGt45AiVOQIbkdMamk",
+    "scope": "openid profile email",
+    "session_state": "5e3cd54a-2924-4e45-8435-ef255f2e578a",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:14,135] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/5b39b0d5-1089-4e74-ba00-ea7c2e11cab4/purge
+[2023-10-30 10:27:14,135] - INFO       Headers: {}
+[2023-10-30 10:27:14,135] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiY2Y2Yzc2ZTktYzNjMi00NDA5LWE3ZTYtZjgwNGZhMzRhMDk3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWUzY2Q1NGEtMjkyNC00ZTQ1LTg0MzUtZWYyNTVmMmU1NzhhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVlM2NkNTRhLTI5MjQtNGU0NS04NDM1LWVmMjU1ZjJlNTc4YSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.KudgTivo-glyPnK1b2NEBP6nRzlhAt68CO7vZ3eC7KjGYM6bFmtlUDPH3p9zplm6g9T32euQTqT06CmE5uQvh3wV8YYtw9mLQFz3Y6v4c4LbE5eNEU1NxvcYJv5klNE3hhGnQZ55YOebUbT9k5jc4f12fNFTtidyZggYXaMlchvHSZ8rzAMdPmqLQP4f7QyExDy-6aM_-4JuY1vzAIWS_SreaIYdbHqtP7qvfY2IwX-odQyTdltg78ZFQav2Dkr9_rRYyepdNSIeRzMTuAIRvqaYJWBvnLUHFaUsx6qZdjS8547X3oYVb3PPE3Xvrkj0_f-Kgm1UHX6nhq3S12tQHQ'}
+[2023-10-30 10:27:14,136] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:14,274] - INFO       Response status code: 200
+[2023-10-30 10:27:14,275] - INFO       Response text:
+ {}
+[2023-10-30 10:27:14,276] - INFO       [USER CLEANUP] User pshannon@morris.com, id=5b39b0d5-1089-4e74-ba00-ea7c2e11cab4 is deleted.
+[2023-10-30 10:27:14,277] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:14,277] - INFO       Headers: {}
+[2023-10-30 10:27:14,278] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiY2Y2Yzc2ZTktYzNjMi00NDA5LWE3ZTYtZjgwNGZhMzRhMDk3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNWUzY2Q1NGEtMjkyNC00ZTQ1LTg0MzUtZWYyNTVmMmU1NzhhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjVlM2NkNTRhLTI5MjQtNGU0NS04NDM1LWVmMjU1ZjJlNTc4YSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.KudgTivo-glyPnK1b2NEBP6nRzlhAt68CO7vZ3eC7KjGYM6bFmtlUDPH3p9zplm6g9T32euQTqT06CmE5uQvh3wV8YYtw9mLQFz3Y6v4c4LbE5eNEU1NxvcYJv5klNE3hhGnQZ55YOebUbT9k5jc4f12fNFTtidyZggYXaMlchvHSZ8rzAMdPmqLQP4f7QyExDy-6aM_-4JuY1vzAIWS_SreaIYdbHqtP7qvfY2IwX-odQyTdltg78ZFQav2Dkr9_rRYyepdNSIeRzMTuAIRvqaYJWBvnLUHFaUsx6qZdjS8547X3oYVb3PPE3Xvrkj0_f-Kgm1UHX6nhq3S12tQHQ'}
+[2023-10-30 10:27:14,278] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:14,465] - INFO       Response status code: 200
+[2023-10-30 10:27:14,465] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiYjZiNzhlYTUtMGIwZi00ZWI4LWFhZjQtOGNjY2JmMDlkOWYwIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMTBiYTVkNjAtYzE3YS00ODgxLTg4MGUtYmYwNjY0NTRkODhjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjEwYmE1ZDYwLWMxN2EtNDg4MS04ODBlLWJmMDY2NDU0ZDg4YyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.T1aFY1tuH8ir1cZ8kvkrA947O4PVARlAXRl7ru_VkEK4s6t-NcPSmGis_8lsWC5I8fTUA1jxKy-wtcHyfQKHTAlGhHBLrNIBkkSwx3pj9Qesd3QGYblGcBHpKHJ7hMCoHQbh936MLyOCZ46VDRSgaU3CsfYHb-dII8tQIB-2BMwMmgVQ-mn2T-JBldWR8jqC3eFbzT4-WgQzMeFLnoDovgYFtD0kvdCQrE3hjWrVMDo6wa8xkFik_QVDb0V25uUMVsnPMc_RbW6T3RWPuZhKy39MQ5FMZTtsYUN1hZHxvvgwZyJEzBGa6uoMrfG3VTEhiCEEtT5aX41BHN219PYN_A",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiZTE1MmQ2MTEtZWM4OC00ZGZiLTlmMzQtZmQ5YjMwMTUxZGYzIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIxMGJhNWQ2MC1jMTdhLTQ4ODEtODgwZS1iZjA2NjQ1NGQ4OGMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMTBiYTVkNjAtYzE3YS00ODgxLTg4MGUtYmYwNjY0NTRkODhjIn0.Plq_bUWVbyPW6_1sxX-AyLUZoDJ_igb5XG4cZ0LoqKM",
+    "scope": "openid profile email",
+    "session_state": "10ba5d60-c17a-4881-880e-bf066454d88c",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:14,466] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/153cadfe-cb49-4895-b411-98c473b45fae/purge
+[2023-10-30 10:27:14,466] - INFO       Headers: {}
+[2023-10-30 10:27:14,466] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiYjZiNzhlYTUtMGIwZi00ZWI4LWFhZjQtOGNjY2JmMDlkOWYwIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMTBiYTVkNjAtYzE3YS00ODgxLTg4MGUtYmYwNjY0NTRkODhjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjEwYmE1ZDYwLWMxN2EtNDg4MS04ODBlLWJmMDY2NDU0ZDg4YyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.T1aFY1tuH8ir1cZ8kvkrA947O4PVARlAXRl7ru_VkEK4s6t-NcPSmGis_8lsWC5I8fTUA1jxKy-wtcHyfQKHTAlGhHBLrNIBkkSwx3pj9Qesd3QGYblGcBHpKHJ7hMCoHQbh936MLyOCZ46VDRSgaU3CsfYHb-dII8tQIB-2BMwMmgVQ-mn2T-JBldWR8jqC3eFbzT4-WgQzMeFLnoDovgYFtD0kvdCQrE3hjWrVMDo6wa8xkFik_QVDb0V25uUMVsnPMc_RbW6T3RWPuZhKy39MQ5FMZTtsYUN1hZHxvvgwZyJEzBGa6uoMrfG3VTEhiCEEtT5aX41BHN219PYN_A'}
+[2023-10-30 10:27:14,467] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:14,639] - INFO       Response status code: 200
+[2023-10-30 10:27:14,640] - INFO       Response text:
+ {}
+[2023-10-30 10:27:14,642] - INFO       [USER CLEANUP] User adamsjason@hotmail.com, id=153cadfe-cb49-4895-b411-98c473b45fae is deleted.
+[2023-10-30 10:27:14,643] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:14,643] - INFO       Headers: {}
+[2023-10-30 10:27:14,644] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiYjZiNzhlYTUtMGIwZi00ZWI4LWFhZjQtOGNjY2JmMDlkOWYwIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMTBiYTVkNjAtYzE3YS00ODgxLTg4MGUtYmYwNjY0NTRkODhjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjEwYmE1ZDYwLWMxN2EtNDg4MS04ODBlLWJmMDY2NDU0ZDg4YyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.T1aFY1tuH8ir1cZ8kvkrA947O4PVARlAXRl7ru_VkEK4s6t-NcPSmGis_8lsWC5I8fTUA1jxKy-wtcHyfQKHTAlGhHBLrNIBkkSwx3pj9Qesd3QGYblGcBHpKHJ7hMCoHQbh936MLyOCZ46VDRSgaU3CsfYHb-dII8tQIB-2BMwMmgVQ-mn2T-JBldWR8jqC3eFbzT4-WgQzMeFLnoDovgYFtD0kvdCQrE3hjWrVMDo6wa8xkFik_QVDb0V25uUMVsnPMc_RbW6T3RWPuZhKy39MQ5FMZTtsYUN1hZHxvvgwZyJEzBGa6uoMrfG3VTEhiCEEtT5aX41BHN219PYN_A'}
+[2023-10-30 10:27:14,644] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:14,794] - INFO       Response status code: 200
+[2023-10-30 10:27:14,797] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiMjVlM2M3MDUtZjA3My00MDNjLWI4YTAtMWU1MjM0Nzg1NGY1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMmEyYjRlMmQtOTgyMC00MDE0LWE1ZjItNGZiMDk0MzUzZGJhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjJhMmI0ZTJkLTk4MjAtNDAxNC1hNWYyLTRmYjA5NDM1M2RiYSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.M4PGVYVSkALdfCNoWlkgYs9TZiQTVueIVtYNTUjS5A1sML7SkVpO1FcaUKE8U50J3uGStYX409SdqHUPEF2ED03QzTBqUfQIYE59rrNLrkU_zYZ5PChj9RMXI8s3MeCFGCuWx_QLxz49bo23Jbnkt_NibVF6BetzvlxL2jntFdMvIHvuEPbo_L7xPCpzW0Rlqv_qm8O6PDLc5pydpq2tqjDlxcXPHE11I9oeoEH3itrEXeIYwmt2amnpeYv4u51DiYrB7fyxLcP5CQHhIFB_56bQT9CQ8uoXAMv8jsFqo_qllLX4MWeR-UEuP03H8IsFHBiAeBt8277IzcQI2yXFgA",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiN2M1MmNhMzUtM2IyNi00MTM0LTg2NTgtZTg4Yzg2NTMwNmNmIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIyYTJiNGUyZC05ODIwLTQwMTQtYTVmMi00ZmIwOTQzNTNkYmEiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMmEyYjRlMmQtOTgyMC00MDE0LWE1ZjItNGZiMDk0MzUzZGJhIn0.H6DOAfsJixLesD9I7Bgcc0H9wyq3dsA7HxoCrmvLJew",
+    "scope": "openid profile email",
+    "session_state": "2a2b4e2d-9820-4014-a5f2-4fb094353dba",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:14,798] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/b16a78e8-61bd-43c2-82e2-4cb8e715a010/purge
+[2023-10-30 10:27:14,799] - INFO       Headers: {}
+[2023-10-30 10:27:14,800] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiMjVlM2M3MDUtZjA3My00MDNjLWI4YTAtMWU1MjM0Nzg1NGY1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMmEyYjRlMmQtOTgyMC00MDE0LWE1ZjItNGZiMDk0MzUzZGJhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjJhMmI0ZTJkLTk4MjAtNDAxNC1hNWYyLTRmYjA5NDM1M2RiYSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.M4PGVYVSkALdfCNoWlkgYs9TZiQTVueIVtYNTUjS5A1sML7SkVpO1FcaUKE8U50J3uGStYX409SdqHUPEF2ED03QzTBqUfQIYE59rrNLrkU_zYZ5PChj9RMXI8s3MeCFGCuWx_QLxz49bo23Jbnkt_NibVF6BetzvlxL2jntFdMvIHvuEPbo_L7xPCpzW0Rlqv_qm8O6PDLc5pydpq2tqjDlxcXPHE11I9oeoEH3itrEXeIYwmt2amnpeYv4u51DiYrB7fyxLcP5CQHhIFB_56bQT9CQ8uoXAMv8jsFqo_qllLX4MWeR-UEuP03H8IsFHBiAeBt8277IzcQI2yXFgA'}
+[2023-10-30 10:27:14,801] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:15,000] - INFO       Response status code: 200
+[2023-10-30 10:27:15,000] - INFO       Response text:
+ {}
+[2023-10-30 10:27:15,002] - INFO       [USER CLEANUP] User hwilliams@mitchell-henry.net, id=b16a78e8-61bd-43c2-82e2-4cb8e715a010 is deleted.
+[2023-10-30 10:27:15,002] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:15,003] - INFO       Headers: {}
+[2023-10-30 10:27:15,003] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzQsImlhdCI6MTY5ODY1NDQzNCwianRpIjoiMjVlM2M3MDUtZjA3My00MDNjLWI4YTAtMWU1MjM0Nzg1NGY1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMmEyYjRlMmQtOTgyMC00MDE0LWE1ZjItNGZiMDk0MzUzZGJhIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjJhMmI0ZTJkLTk4MjAtNDAxNC1hNWYyLTRmYjA5NDM1M2RiYSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.M4PGVYVSkALdfCNoWlkgYs9TZiQTVueIVtYNTUjS5A1sML7SkVpO1FcaUKE8U50J3uGStYX409SdqHUPEF2ED03QzTBqUfQIYE59rrNLrkU_zYZ5PChj9RMXI8s3MeCFGCuWx_QLxz49bo23Jbnkt_NibVF6BetzvlxL2jntFdMvIHvuEPbo_L7xPCpzW0Rlqv_qm8O6PDLc5pydpq2tqjDlxcXPHE11I9oeoEH3itrEXeIYwmt2amnpeYv4u51DiYrB7fyxLcP5CQHhIFB_56bQT9CQ8uoXAMv8jsFqo_qllLX4MWeR-UEuP03H8IsFHBiAeBt8277IzcQI2yXFgA'}
+[2023-10-30 10:27:15,003] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:15,150] - INFO       Response status code: 200
+[2023-10-30 10:27:15,151] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiMTk1MGIzY2UtNGNjNy00NjA5LWIxODAtMTA4MzA4ZDFkN2RkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMjZkMWEwNDUtY2FmNC00NzdiLTk1OGUtMjk2MzIzZmJhMjE5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjI2ZDFhMDQ1LWNhZjQtNDc3Yi05NThlLTI5NjMyM2ZiYTIxOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.DHbRQ4ZvNskGJD6h-7dADnYWPwQ3H1a0eYT-70Oh9umAMQF8dl8_B-KU5sxY6x_ZBPopc-zQi2aYzP04NLeNVKr-Xj9Kd9SsFX2ISTJSwOGnbcrfrHvUYalzMasA4KFwJdm_R0TQIH0AALYBEw7_itgxNhI_jvUpNAxcvmZjHAPVrpB1Kep7VRZJqcHOfUBVT0qiczLSf4H1eTvpYePvoB7Rd5v57ANtYnQFu5R3-XgGVRXDC2gZQd5tH4bNDouleXLy2W0eKv6qwjjSuCU1MxBXoBWI2P_qMcOnVROM2EdwcSoatf5rU6Mb3hDgAKxaC3Iq-4_740KiabVJILNuNw",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiY2IwZmRkODEtOTZhNC00N2Q0LTkwN2EtMjQ4ZmExMzQyYzE1IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIyNmQxYTA0NS1jYWY0LTQ3N2ItOTU4ZS0yOTYzMjNmYmEyMTkiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMjZkMWEwNDUtY2FmNC00NzdiLTk1OGUtMjk2MzIzZmJhMjE5In0.ML-7Rox6R2LCU-tZ-mmoOw2ok9xcpC8hbrSSFxvtZl8",
+    "scope": "openid profile email",
+    "session_state": "26d1a045-caf4-477b-958e-296323fba219",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:15,151] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/3fb5d57b-0f3a-47b3-8710-cb3703b9c24d/purge
+[2023-10-30 10:27:15,152] - INFO       Headers: {}
+[2023-10-30 10:27:15,152] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiMTk1MGIzY2UtNGNjNy00NjA5LWIxODAtMTA4MzA4ZDFkN2RkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMjZkMWEwNDUtY2FmNC00NzdiLTk1OGUtMjk2MzIzZmJhMjE5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjI2ZDFhMDQ1LWNhZjQtNDc3Yi05NThlLTI5NjMyM2ZiYTIxOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.DHbRQ4ZvNskGJD6h-7dADnYWPwQ3H1a0eYT-70Oh9umAMQF8dl8_B-KU5sxY6x_ZBPopc-zQi2aYzP04NLeNVKr-Xj9Kd9SsFX2ISTJSwOGnbcrfrHvUYalzMasA4KFwJdm_R0TQIH0AALYBEw7_itgxNhI_jvUpNAxcvmZjHAPVrpB1Kep7VRZJqcHOfUBVT0qiczLSf4H1eTvpYePvoB7Rd5v57ANtYnQFu5R3-XgGVRXDC2gZQd5tH4bNDouleXLy2W0eKv6qwjjSuCU1MxBXoBWI2P_qMcOnVROM2EdwcSoatf5rU6Mb3hDgAKxaC3Iq-4_740KiabVJILNuNw'}
+[2023-10-30 10:27:15,152] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:15,312] - INFO       Response status code: 200
+[2023-10-30 10:27:15,313] - INFO       Response text:
+ {}
+[2023-10-30 10:27:15,315] - INFO       [USER CLEANUP] User robertlin@yahoo.com, id=3fb5d57b-0f3a-47b3-8710-cb3703b9c24d is deleted.
+[2023-10-30 10:27:15,317] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:15,318] - INFO       Headers: {}
+[2023-10-30 10:27:15,318] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiMTk1MGIzY2UtNGNjNy00NjA5LWIxODAtMTA4MzA4ZDFkN2RkIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMjZkMWEwNDUtY2FmNC00NzdiLTk1OGUtMjk2MzIzZmJhMjE5IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjI2ZDFhMDQ1LWNhZjQtNDc3Yi05NThlLTI5NjMyM2ZiYTIxOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.DHbRQ4ZvNskGJD6h-7dADnYWPwQ3H1a0eYT-70Oh9umAMQF8dl8_B-KU5sxY6x_ZBPopc-zQi2aYzP04NLeNVKr-Xj9Kd9SsFX2ISTJSwOGnbcrfrHvUYalzMasA4KFwJdm_R0TQIH0AALYBEw7_itgxNhI_jvUpNAxcvmZjHAPVrpB1Kep7VRZJqcHOfUBVT0qiczLSf4H1eTvpYePvoB7Rd5v57ANtYnQFu5R3-XgGVRXDC2gZQd5tH4bNDouleXLy2W0eKv6qwjjSuCU1MxBXoBWI2P_qMcOnVROM2EdwcSoatf5rU6Mb3hDgAKxaC3Iq-4_740KiabVJILNuNw'}
+[2023-10-30 10:27:15,319] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:15,506] - INFO       Response status code: 200
+[2023-10-30 10:27:15,506] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiNDMwNjQ1NTgtN2JiOC00NzE3LTlmMmUtMDQ2MDVjMDFkMDA5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNDcwZmJjMWQtOGEwOC00M2QyLWJkMDEtNjBjZGJhZWNlMjI0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjQ3MGZiYzFkLThhMDgtNDNkMi1iZDAxLTYwY2RiYWVjZTIyNCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.LgeBVs6p_IQuJZTmnLJ9z4z9rR9_5LDku8Db020rrGLPMZuwGMJAWiK8kyjN9dmu6NORi6wwDuXWEFKAt0RHuiXb--J_hsZsaky-h9cChmNdxrOEghFCDGw889Ye2ubHO0EnbVObHuHGvAmJT_qje-T3APwgG-qTvYK-h-vL9UivtXKyZP5HbxF8yVSwP2sczsT6KQmPFG0wOX6kP_opu4zTSiKV75FkJ5jyMSFgNHaZxrOcTheokJsw5GBSiyQrBJODtuAzD0YD7BL1F5XK83W3K8IU-8yJIW1u0pIZQqFA1H21iL0STqQKkrOm8cV8fjDlmpMl-W4kB1xOdinzUg",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiMGU2ZGQ5NjgtYTMxOC00MjY0LWEyY2MtYjRmZjYyZDhiMWVlIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiI0NzBmYmMxZC04YTA4LTQzZDItYmQwMS02MGNkYmFlY2UyMjQiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiNDcwZmJjMWQtOGEwOC00M2QyLWJkMDEtNjBjZGJhZWNlMjI0In0.c1k2LAi3BFRoTpTw6F94AAdVaA1TWL15wYQZbfeYAYw",
+    "scope": "openid profile email",
+    "session_state": "470fbc1d-8a08-43d2-bd01-60cdbaece224",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:15,507] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/e487052e-d519-4fe7-9b39-6b034238b849/purge
+[2023-10-30 10:27:15,507] - INFO       Headers: {}
+[2023-10-30 10:27:15,508] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiNDMwNjQ1NTgtN2JiOC00NzE3LTlmMmUtMDQ2MDVjMDFkMDA5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNDcwZmJjMWQtOGEwOC00M2QyLWJkMDEtNjBjZGJhZWNlMjI0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjQ3MGZiYzFkLThhMDgtNDNkMi1iZDAxLTYwY2RiYWVjZTIyNCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.LgeBVs6p_IQuJZTmnLJ9z4z9rR9_5LDku8Db020rrGLPMZuwGMJAWiK8kyjN9dmu6NORi6wwDuXWEFKAt0RHuiXb--J_hsZsaky-h9cChmNdxrOEghFCDGw889Ye2ubHO0EnbVObHuHGvAmJT_qje-T3APwgG-qTvYK-h-vL9UivtXKyZP5HbxF8yVSwP2sczsT6KQmPFG0wOX6kP_opu4zTSiKV75FkJ5jyMSFgNHaZxrOcTheokJsw5GBSiyQrBJODtuAzD0YD7BL1F5XK83W3K8IU-8yJIW1u0pIZQqFA1H21iL0STqQKkrOm8cV8fjDlmpMl-W4kB1xOdinzUg'}
+[2023-10-30 10:27:15,508] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:15,645] - INFO       Response status code: 200
+[2023-10-30 10:27:15,646] - INFO       Response text:
+ {}
+[2023-10-30 10:27:15,648] - INFO       [USER CLEANUP] User vazquezmiranda@yahoo.com, id=e487052e-d519-4fe7-9b39-6b034238b849 is deleted.
+[2023-10-30 10:27:15,649] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:15,649] - INFO       Headers: {}
+[2023-10-30 10:27:15,649] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiNDMwNjQ1NTgtN2JiOC00NzE3LTlmMmUtMDQ2MDVjMDFkMDA5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiNDcwZmJjMWQtOGEwOC00M2QyLWJkMDEtNjBjZGJhZWNlMjI0IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjQ3MGZiYzFkLThhMDgtNDNkMi1iZDAxLTYwY2RiYWVjZTIyNCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.LgeBVs6p_IQuJZTmnLJ9z4z9rR9_5LDku8Db020rrGLPMZuwGMJAWiK8kyjN9dmu6NORi6wwDuXWEFKAt0RHuiXb--J_hsZsaky-h9cChmNdxrOEghFCDGw889Ye2ubHO0EnbVObHuHGvAmJT_qje-T3APwgG-qTvYK-h-vL9UivtXKyZP5HbxF8yVSwP2sczsT6KQmPFG0wOX6kP_opu4zTSiKV75FkJ5jyMSFgNHaZxrOcTheokJsw5GBSiyQrBJODtuAzD0YD7BL1F5XK83W3K8IU-8yJIW1u0pIZQqFA1H21iL0STqQKkrOm8cV8fjDlmpMl-W4kB1xOdinzUg'}
+[2023-10-30 10:27:15,649] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:15,797] - INFO       Response status code: 200
+[2023-10-30 10:27:15,797] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiYjNmOTZhY2QtZTk0Yi00OWQ2LTljMTEtN2Q4Yzk0YjgwMjJjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYWYzNGRmMTAtYTI3MS00MWIwLThlZWYtM2RkNDhkY2I4ZWI1IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMzRkZjEwLWEyNzEtNDFiMC04ZWVmLTNkZDQ4ZGNiOGViNSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Yp0R1R_gvzwxAAGo6S7hDa3rLgIlXjMfoSGCPWFLaui7vL-W_rhttmGUuDczdN2ZV8k03f434ZYe-f-QAFIQ4HcpejHiyEFh78wn3Ymv9up4qtfZahHhFgf191cOZziD6B7b1UM-z25ZiwuXoAIHzj3FZJdTLXeBB4MfOOqVjAnWmv0WDkr_Sc8L1FKREsCSDPDb9ZsArP5Uy2-XNDF-9-gsaHHnVz3oWDZ51QrLAVU8KuOoQCf7jyy-kBo9jCgKWMhmNmUEMlmRgCt3fxh2fJrQABhmj1SIBBAxmJ2YmlIbsj7Afu_-oWcSkxcdmHOthmFctE1TFARj55CcMy5Twg",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiZjg5MGNlMTYtNzk5ZS00YmY2LTg5NWQtYTJlYWU5ZTJjOTUzIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiJhZjM0ZGYxMC1hMjcxLTQxYjAtOGVlZi0zZGQ0OGRjYjhlYjUiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiYWYzNGRmMTAtYTI3MS00MWIwLThlZWYtM2RkNDhkY2I4ZWI1In0.UFRlVlFmDfQtilqJLcAB8FlF1opkgn_ZRGw6m3hASxc",
+    "scope": "openid profile email",
+    "session_state": "af34df10-a271-41b0-8eef-3dd48dcb8eb5",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:15,798] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/1cc8c0b2-a984-457a-8422-fe0f83553d71/purge
+[2023-10-30 10:27:15,798] - INFO       Headers: {}
+[2023-10-30 10:27:15,798] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiYjNmOTZhY2QtZTk0Yi00OWQ2LTljMTEtN2Q4Yzk0YjgwMjJjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYWYzNGRmMTAtYTI3MS00MWIwLThlZWYtM2RkNDhkY2I4ZWI1IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMzRkZjEwLWEyNzEtNDFiMC04ZWVmLTNkZDQ4ZGNiOGViNSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Yp0R1R_gvzwxAAGo6S7hDa3rLgIlXjMfoSGCPWFLaui7vL-W_rhttmGUuDczdN2ZV8k03f434ZYe-f-QAFIQ4HcpejHiyEFh78wn3Ymv9up4qtfZahHhFgf191cOZziD6B7b1UM-z25ZiwuXoAIHzj3FZJdTLXeBB4MfOOqVjAnWmv0WDkr_Sc8L1FKREsCSDPDb9ZsArP5Uy2-XNDF-9-gsaHHnVz3oWDZ51QrLAVU8KuOoQCf7jyy-kBo9jCgKWMhmNmUEMlmRgCt3fxh2fJrQABhmj1SIBBAxmJ2YmlIbsj7Afu_-oWcSkxcdmHOthmFctE1TFARj55CcMy5Twg'}
+[2023-10-30 10:27:15,799] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:15,987] - INFO       Response status code: 200
+[2023-10-30 10:27:15,987] - INFO       Response text:
+ {}
+[2023-10-30 10:27:15,989] - INFO       [USER CLEANUP] User nclark@gmail.com, id=1cc8c0b2-a984-457a-8422-fe0f83553d71 is deleted.
+[2023-10-30 10:27:15,990] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:27:15,990] - INFO       Headers: {}
+[2023-10-30 10:27:15,990] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzUsImlhdCI6MTY5ODY1NDQzNSwianRpIjoiYjNmOTZhY2QtZTk0Yi00OWQ2LTljMTEtN2Q4Yzk0YjgwMjJjIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYWYzNGRmMTAtYTI3MS00MWIwLThlZWYtM2RkNDhkY2I4ZWI1IiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMzRkZjEwLWEyNzEtNDFiMC04ZWVmLTNkZDQ4ZGNiOGViNSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.Yp0R1R_gvzwxAAGo6S7hDa3rLgIlXjMfoSGCPWFLaui7vL-W_rhttmGUuDczdN2ZV8k03f434ZYe-f-QAFIQ4HcpejHiyEFh78wn3Ymv9up4qtfZahHhFgf191cOZziD6B7b1UM-z25ZiwuXoAIHzj3FZJdTLXeBB4MfOOqVjAnWmv0WDkr_Sc8L1FKREsCSDPDb9ZsArP5Uy2-XNDF-9-gsaHHnVz3oWDZ51QrLAVU8KuOoQCf7jyy-kBo9jCgKWMhmNmUEMlmRgCt3fxh2fJrQABhmj1SIBBAxmJ2YmlIbsj7Afu_-oWcSkxcdmHOthmFctE1TFARj55CcMy5Twg'}
+[2023-10-30 10:27:15,991] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:27:16,132] - INFO       Response status code: 200
+[2023-10-30 10:27:16,133] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzYsImlhdCI6MTY5ODY1NDQzNiwianRpIjoiYTk5MDIzZWUtOGNiMi00ZWZlLWEzMmMtNzFlNjkwMWI1OGM2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYjQzMzk0YjEtMzRjNS00OGU1LTk0ZjktZDA0MmJkNTUyY2IzIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImI0MzM5NGIxLTM0YzUtNDhlNS05NGY5LWQwNDJiZDU1MmNiMyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.OmuJkjEQX8I67NcBIA7qUzg1tM2jUh4gj3pLJ6rwVIxXYatN9zVWrRGu7T0tORcGkQbal-hulzOUJZbiO2PI2AybjGUoPbrKMRQND_DnZQHnfxO2J6TUOHdNJNsU5c7SCrROyPeDqGY6w6kvS5oYLHxg-1FJKUtiZi2W4qXJe7S38bvPeaWVtukJ6Bqw5DBfxFWC7_1C8dTD8ubJDOowisxRz-D3V3jx5vEdn01NtG-Lh-eOm4V5krS4T_dnCTaEVk8qn9P-lqd92EkQAyZAMicuA0FTd5mXCH1eOGz9QI92iJtNYh-eNJE5ILXNjz_RHP63P5bOVVedZMeDH5TBIg",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTYyMzYsImlhdCI6MTY5ODY1NDQzNiwianRpIjoiZjhiMmYzOTUtMjg1MS00MDA2LTg3YjctYzU3MGM3OTEzZDAxIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiJiNDMzOTRiMS0zNGM1LTQ4ZTUtOTRmOS1kMDQyYmQ1NTJjYjMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiYjQzMzk0YjEtMzRjNS00OGU1LTk0ZjktZDA0MmJkNTUyY2IzIn0.yIOsvF887So54Wb2A3Q8TOZAgXq_VgqU4at9mDmpgag",
+    "scope": "openid profile email",
+    "session_state": "b43394b1-34c5-48e5-94f9-d042bd552cb3",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:27:16,133] - INFO       Sending HTTP DELETE to: https://ivanh2.neosdata.cloud/api/iam/user/02dec370-3074-4632-8343-09f42dd0224e/purge
+[2023-10-30 10:27:16,133] - INFO       Headers: {}
+[2023-10-30 10:27:16,134] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTQ3MzYsImlhdCI6MTY5ODY1NDQzNiwianRpIjoiYTk5MDIzZWUtOGNiMi00ZWZlLWEzMmMtNzFlNjkwMWI1OGM2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiYjQzMzk0YjEtMzRjNS00OGU1LTk0ZjktZDA0MmJkNTUyY2IzIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImI0MzM5NGIxLTM0YzUtNDhlNS05NGY5LWQwNDJiZDU1MmNiMyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.OmuJkjEQX8I67NcBIA7qUzg1tM2jUh4gj3pLJ6rwVIxXYatN9zVWrRGu7T0tORcGkQbal-hulzOUJZbiO2PI2AybjGUoPbrKMRQND_DnZQHnfxO2J6TUOHdNJNsU5c7SCrROyPeDqGY6w6kvS5oYLHxg-1FJKUtiZi2W4qXJe7S38bvPeaWVtukJ6Bqw5DBfxFWC7_1C8dTD8ubJDOowisxRz-D3V3jx5vEdn01NtG-Lh-eOm4V5krS4T_dnCTaEVk8qn9P-lqd92EkQAyZAMicuA0FTd5mXCH1eOGz9QI92iJtNYh-eNJE5ILXNjz_RHP63P5bOVVedZMeDH5TBIg'}
+[2023-10-30 10:27:16,134] - INFO       Params:
+ {
+    "account": "root"
+}
+[2023-10-30 10:27:16,268] - INFO       Response status code: 200
+[2023-10-30 10:27:16,268] - INFO       Response text:
+ {}
+[2023-10-30 10:27:16,270] - INFO       [USER CLEANUP] User dmarshall@porter.org, id=02dec370-3074-4632-8343-09f42dd0224e is deleted.

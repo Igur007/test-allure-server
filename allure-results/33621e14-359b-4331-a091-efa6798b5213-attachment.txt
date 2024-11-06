@@ -1,0 +1,28 @@
+[2023-10-30 10:32:34,671] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:32:34,672] - INFO       Headers: {}
+[2023-10-30 10:32:34,672] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa'}
+[2023-10-30 10:32:34,672] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:32:35,002] - INFO       Response status code: 200
+[2023-10-30 10:32:35,003] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTUwNTUsImlhdCI6MTY5ODY1NDc1NSwianRpIjoiODNmM2RlYTgtNzIwMy00NzA3LTk5ODktOTY2MDdjMjdlMjkyIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWMyMWQyY2ItNTllYS00YTE2LWE2MGEtMmNhNmE3Njg2MjBlIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFjMjFkMmNiLTU5ZWEtNGExNi1hNjBhLTJjYTZhNzY4NjIwZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.GQYM93gIGek0gf4uDw8oh2Q1oQ6I_Lkf3fiSWZNFXvEuQgpLW-hOQAiKEy6PEHqPYnVG2cPwNjw5vWGUYIiiybFlFPh0M4l5iQ1QvWTJXMf6wRIxglv0gty49yi_advT3bhpaETMzxNWFiY_DuUvx-pWZXQVHrmQZis9GzvhsBWUEYitm2KoJcQD7GU13ScQczhbJIOuIO3TSau7aW4297j7K_6TpoEkTJsoXoDHBeXCQ4ZqjEzn1qB3Zb0U5sKlxL3_V0Xvw5ir_or0L54iv7izXKwxVxpi4rUTW1DchzvMXEbM3F5oh7nr3WNI3pzsrG1PP-3K5AIONrVVX1w3mw",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTY1NTUsImlhdCI6MTY5ODY1NDc1NSwianRpIjoiOWEyMWQ3N2EtYzY5My00ZThiLTliNTQtZmRiZjNmYWY4YzU2IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIxYzIxZDJjYi01OWVhLTRhMTYtYTYwYS0yY2E2YTc2ODYyMGUiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMWMyMWQyY2ItNTllYS00YTE2LWE2MGEtMmNhNmE3Njg2MjBlIn0.ydoZ6MnkA8bpj7e4-Y9S0lCcr08YR7DN1k8jb9L8e10",
+    "scope": "openid profile email",
+    "session_state": "1c21d2cb-59ea-4a16-a60a-2ca6a768620e",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:32:35,005] - INFO       Sending HTTP GET to: https://ivanh2.neosdata.cloud/api/consume/v2/powerbi/result/mpkrunsvrz
+[2023-10-30 10:32:35,006] - INFO       Headers: {}
+[2023-10-30 10:32:35,006] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTUwNTUsImlhdCI6MTY5ODY1NDc1NSwianRpIjoiODNmM2RlYTgtNzIwMy00NzA3LTk5ODktOTY2MDdjMjdlMjkyIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMWMyMWQyY2ItNTllYS00YTE2LWE2MGEtMmNhNmE3Njg2MjBlIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjFjMjFkMmNiLTU5ZWEtNGExNi1hNjBhLTJjYTZhNzY4NjIwZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.GQYM93gIGek0gf4uDw8oh2Q1oQ6I_Lkf3fiSWZNFXvEuQgpLW-hOQAiKEy6PEHqPYnVG2cPwNjw5vWGUYIiiybFlFPh0M4l5iQ1QvWTJXMf6wRIxglv0gty49yi_advT3bhpaETMzxNWFiY_DuUvx-pWZXQVHrmQZis9GzvhsBWUEYitm2KoJcQD7GU13ScQczhbJIOuIO3TSau7aW4297j7K_6TpoEkTJsoXoDHBeXCQ4ZqjEzn1qB3Zb0U5sKlxL3_V0Xvw5ir_or0L54iv7izXKwxVxpi4rUTW1DchzvMXEbM3F5oh7nr3WNI3pzsrG1PP-3K5AIONrVVX1w3mw'}
+[2023-10-30 10:32:35,040] - INFO       Response status code: 404
+[2023-10-30 10:32:35,040] - INFO       Response text:
+ {
+    "code": "0x0090018",
+    "message": "specified key is invalid or expired"
+}

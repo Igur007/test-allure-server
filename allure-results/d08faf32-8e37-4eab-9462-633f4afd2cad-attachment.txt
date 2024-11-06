@@ -1,0 +1,32 @@
+[2023-10-30 10:33:33,966] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/iam/login
+[2023-10-30 10:33:33,966] - INFO       Headers: {}
+[2023-10-30 10:33:33,966] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTUxMTQsImlhdCI6MTY5ODY1NDgxNCwianRpIjoiN2EzZWU0N2UtNDRhNS00NGRmLWJiNjEtYWM1YjhhZjE2MzM5IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiZjcxZWM3NDktOTcwNi00N2JmLWExYjUtODgxMDA3NDhmMzMwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImY3MWVjNzQ5LTk3MDYtNDdiZi1hMWI1LTg4MTAwNzQ4ZjMzMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.gLgZ4C-_GEqmZ2gk7JrQi9WLU1N6hYPFapGI2uN33DIzIWOUw6Ya6Ijj4iFW2SLIFmnWbBUd-XcBFDiP4L-1nPPPa5EhV1jy8GpHIlJ0q8PkEfsAFiAXdQ9Bj-TIkf5fUmiE1u5tIKjIvsxQW9sRAmX0pdr_o0wCtX-Fd7flFnh0_4IwVOWRr432TDBWcNNUvn46Gu_LxphTdVBDzlxHD93ac6r2BCoiICcbut0EvF_imWr9qtlENLDnOikweIgaGnuzpmRirO-LYd4RLHph2F-WS2l69GF4Wy-3iKeY2y3KmYFCHuVM8WvNsjolGb9Bl7xZERsHjFexOk4iKvGomg'}
+[2023-10-30 10:33:33,966] - INFO       Body:
+ {
+    "password": "ZTgwODI4NzM1",
+    "user": "neosadmin"
+}
+[2023-10-30 10:33:34,115] - INFO       Response status code: 200
+[2023-10-30 10:33:34,116] - INFO       Response text:
+ {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTUxMTQsImlhdCI6MTY5ODY1NDgxNCwianRpIjoiMjQ3MjE1NGEtYzIxMi00ODM5LWEwOWUtZWY1MmNmY2EzODU3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMTU1OGIyMWMtYTZhOC00MGM3LWJiNDgtOTY5MDIyMzgxZjZjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjE1NThiMjFjLWE2YTgtNDBjNy1iYjQ4LTk2OTAyMjM4MWY2YyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.blUALpH9GMtYI1VH_OwkGAcYwCato0N1gdNy4KnCADoS9Snnf9gOJ4_ecpd9Z3D0blRLx3_8GdIWq4WPeYqgk7zp8G5oaZbWLASjtVTYaEZlroxWD94juqUWtDlBNFnUCLS48v5KrhOrF8NyaVAnOsFvGbuKYifpXw5CwDP_NluAY_cv9_DjUJgofT8goEp9wH0SEEQxhSyLqpEbesBl2MzsN_VfGYPV2H6fXsXHFY0fJ0ewHz35kOBvNLIH5u7xvcaDlWgEn8_XCbrdIMJx7llj0w0vsj5ekx4IfTvfp0yDgGx0UCw6qm3YXAs4ehrv4S_60BDyf0Z0RcKbAwIcLQ",
+    "expires_in": 300,
+    "refresh_expires_in": 1800,
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NGY3NmQ0OC1iOWNiLTQyZTYtOTc3My1kNGIwNDRiMmVhZDkifQ.eyJleHAiOjE2OTg2NTY2MTQsImlhdCI6MTY5ODY1NDgxNCwianRpIjoiMTdhZjJmOTctODk2MC00N2Y2LTg3N2MtYmVkNWE0NTA1ZDlhIiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJodHRwczovL2tleWNsb2FrLml2YW5oMi5uZW9zZGF0YS5jbG91ZC9yZWFsbXMvbmVvcyIsInN1YiI6ImYzZTc1NDA2LWZmY2QtNGUwZC04ODljLTFiMjdlZTVjN2M1NiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJuZW9zLWlhbSIsInNlc3Npb25fc3RhdGUiOiIxNTU4YjIxYy1hNmE4LTQwYzctYmI0OC05NjkwMjIzODFmNmMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiMTU1OGIyMWMtYTZhOC00MGM3LWJiNDgtOTY5MDIyMzgxZjZjIn0.frs_uFT1Ie0j5UYsgXktXZBBAj-dk-SmsoPRU6XITio",
+    "scope": "openid profile email",
+    "session_state": "1558b21c-a6a8-40c7-bb48-969022381f6c",
+    "token_type": "Bearer"
+}
+[2023-10-30 10:33:34,118] - INFO       Sending HTTP POST to: https://ivanh2.neosdata.cloud/api/consume/v2/powerbi/statement
+[2023-10-30 10:33:34,118] - INFO       Headers: {}
+[2023-10-30 10:33:34,119] - INFO       Session headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-account': 'root', 'x-partition': 'ksa', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJpazRtWmVCVEpYUVFIVDZuXzRKTXg2VGtBUGpZYU01bmJWVUFQY016enBjIn0.eyJleHAiOjE2OTg2NTUxMTQsImlhdCI6MTY5ODY1NDgxNCwianRpIjoiMjQ3MjE1NGEtYzIxMi00ODM5LWEwOWUtZWY1MmNmY2EzODU3IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay5pdmFuaDIubmVvc2RhdGEuY2xvdWQvcmVhbG1zL25lb3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjNlNzU0MDYtZmZjZC00ZTBkLTg4OWMtMWIyN2VlNWM3YzU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoibmVvcy1pYW0iLCJzZXNzaW9uX3N0YXRlIjoiMTU1OGIyMWMtYTZhOC00MGM3LWJiNDgtOTY5MDIyMzgxZjZjIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1uZW9zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjE1NThiMjFjLWE2YTgtNDBjNy1iYjQ4LTk2OTAyMjM4MWY2YyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoibmVvc2FkbWluIn0.blUALpH9GMtYI1VH_OwkGAcYwCato0N1gdNy4KnCADoS9Snnf9gOJ4_ecpd9Z3D0blRLx3_8GdIWq4WPeYqgk7zp8G5oaZbWLASjtVTYaEZlroxWD94juqUWtDlBNFnUCLS48v5KrhOrF8NyaVAnOsFvGbuKYifpXw5CwDP_NluAY_cv9_DjUJgofT8goEp9wH0SEEQxhSyLqpEbesBl2MzsN_VfGYPV2H6fXsXHFY0fJ0ewHz35kOBvNLIH5u7xvcaDlWgEn8_XCbrdIMJx7llj0w0vsj5ekx4IfTvfp0yDgGx0UCw6qm3YXAs4ehrv4S_60BDyf0Z0RcKbAwIcLQ'}
+[2023-10-30 10:33:34,119] - INFO       Body:
+ {
+    "query": "SELECT * FROM .postgres.neos.test_table"
+}
+[2023-10-30 10:33:34,173] - INFO       Response status code: 500
+[2023-10-30 10:33:34,174] - INFO       Response text:
+ {
+    "code": "0x0060016",
+    "message": "could not get table - identifier mapping"
+}
