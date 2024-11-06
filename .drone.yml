@@ -29,6 +29,7 @@ steps:
   image: igur007/py3106allure:latest
   pull: if-not-exists
   commands:
+  - pip3 install invoke
   - . .venv/bin/activate
   - inv tests-coverage
   depends_on:
