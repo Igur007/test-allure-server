@@ -10,9 +10,6 @@ trigger:
     - refs/pull/**
     - refs/tags/v**
 
-node:
-  architecture: arm64
-
 steps:
 - name: check style
   image: igur007/py3106allure:latest
