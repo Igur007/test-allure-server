@@ -10,9 +10,6 @@ trigger:
     - refs/pull/**
     - refs/tags/v**
 
-image_pull_secrets:
-- CLOUDSMITH_DOCKER
-
 steps:
 - name: check style
   image: igur007/py3106allure:latest
