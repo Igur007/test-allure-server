@@ -56,6 +56,5 @@ steps:
       # Upload the zip file to the Allure server
       SERVER=http://10.110.213.220:8080
       echo "My server:" $SERVER
-      UUID=$(curl -X "POST" "$SERVER/api/result"  -H 'accept: */*' -H 'Content-Type: multipart/form-data' -F 'allureResults=@allure-results.zip;type=application/zip' 
-          | python3 -c "import sys, json; print(json.load(sys.stdin)['uuid']);") 
+      UUID=$(curl -X "POST" "$SERVER/api/result"  -H 'accept: */*' -H 'Content-Type: multipart/form-data' -F 'allureResults=@allure-results.zip;type=application/zip') 
       echo "Result UUID:" $UUID
