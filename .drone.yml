@@ -26,16 +26,19 @@ steps:
     - inv check-style
 
   - name: run unit tests
+    depends_on:
+      - check style
     image: igur007/py3106allure:latest
     pull: if-not-exists
     commands:
     - pip3 install invoke
     - . .venv/bin/activate
     - inv tests-coverage
-    depends_on:
-    - check style
+
 
   - name: allure report
+    depends_on:
+      - run unit tests
     image: igur007/drone-allure-server-plugin:latest
     pull: if-not-exists
     environment:
