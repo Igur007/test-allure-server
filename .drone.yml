@@ -61,7 +61,23 @@ steps:
       echo "Result UUID:" $UUID
     - |
       # Generate report based on the uploaded result
-      curl -X "POST" "$SERVER/api/report" \ 
+      curl -X POST "$SERVER/api/report" \
+      -H 'Content-Type: application/json' \
       -H 'accept: */*' \
-      -H 'Content-Type: application/json' \ 
-      -d "{\"reportSpec\":{\"path\":[\"pathstring\"],\"executorInfo\":{\"name\":\"Drone\",\"type\":\"exectype\",\"url\":\"https://github.com/senior-tester/run-tests-demo/actions/workflows/server.yml\",\"buildOrder\":0,\"buildName\":\"100\",\"buildUrl\":\"https://github.com/senior-tester/run-tests-demo/actions/runs/11\",\"reportName\":\"my_report_name\",\"reportUrl\":\"my_report_url\"}},\"results\":[\"$UUID\"],\"deleteResults\":true}"
+      -d '{
+        "reportSpec": {
+          "path": ["string"],
+          "executorInfo": {
+            "name": "Drone",
+            "type": "exectype",
+            "url": "",
+            "buildOrder": 0,
+            "buildName": "",
+            "buildUrl": "",
+            "reportName": "NEOS",
+            "reportUrl": "string"
+          }
+        },
+        "results": ["'"$UUID"'"],
+        "deleteResults": true
+      }'
