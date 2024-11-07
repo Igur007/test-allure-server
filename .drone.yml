@@ -41,7 +41,7 @@ steps:
 #    depends_on:
 #      - run unit tests
     commands:
-    - apt-get update && apt-get install -y zip
+    - apt-get update && apt-get install -y zip jq
     - |
       # Zip the allure-results folder
       if [ -d "allure-results" ]; then
@@ -55,6 +55,7 @@ steps:
     - |  
       # Upload the zip file to the Allure server
       SERVER=http://10.110.213.220:8080
-      echo "My server:" $SERVER
-      UUID=$(curl -X "POST" "$SERVER/api/result"  -H 'accept: */*' -H 'Content-Type: multipart/form-data' -F 'allureResults=@allure-results.zip;type=application/zip') 
+      UUID=$(curl -X "POST" "$SERVER/api/result" \
+       -H 'accept: */*' -H 'Content-Type: multipart/form-data' \
+       -F 'allureResults=@allure-results.zip;type=application/zip' | jq -r '.uuid') 
       echo "Result UUID:" $UUID
