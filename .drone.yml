@@ -51,6 +51,7 @@ steps:
         exit 1
       fi
     - ls -lha
+    - pwd
     - |  
       # Upload the zip file to the Allure server
-      curl --location --request POST 'http://10.110.213.220:8080/api/result' --form 'allureResults=@"allure-results.zip"'
+      curl --location --request POST 'http://10.110.213.220:8080/api/result' --form 'allureResults=@"./allure-results.zip"'
