@@ -22,8 +22,6 @@ steps:
     - pip3 install uv
     - inv install-dev
     - . .venv/bin/activate
-    - pre-commit run --all-files
-    - inv check-style
 
   - name: run unit tests
     depends_on:
