@@ -35,49 +35,9 @@ steps:
 #    depends_on:
 #    - check style
 
-  - name: upload allure results
-    image: igur007/py3106allure:latest
+  - name: allure report
+    image: igur007/drone-allure-server-plugin:latest
     pull: if-not-exists
-#    depends_on:
-#      - run unit tests
-    commands:
-    - apt-get update && apt-get install -y zip jq
-    - |
-      # Zip the allure-results folder
-      if [ -d "allure-results" ]; then
-        zip -r allure-results.zip allure-results
-      else
-        echo "allure-results folder not found"
-        exit 1
-      fi
-    - ls -lha
-    - pwd
-    - |  
-      # Upload the zip file to the Allure server
-      SERVER=http://10.110.213.220:8080
-      UUID=$(curl -X "POST" "$SERVER/api/result" \
-       -H 'accept: */*' -H 'Content-Type: multipart/form-data' \
-       -F 'allureResults=@allure-results.zip;type=application/zip' | jq -r '.uuid') 
-      echo "Result UUID:" $UUID
-    - |
-      # Generate report based on the uploaded result
-      curl -X POST "$SERVER/api/report" \
-      -H 'Content-Type: application/json' \
-      -H 'accept: */*' \
-      -d '{
-        "reportSpec": {
-          "path": ["main"],
-          "executorInfo": {
-            "name": "Drone",
-            "type": "exectype",
-            "url": "",
-            "buildOrder": 1,
-            "buildName": "'"$DRONE_BUILD_NUMBER"'",
-            "buildUrl": "'"$DRONE_BUILD_LINK"'",
-            "reportName": "NEOS",
-            "reportUrl": "report"
-          }
-        },
-        "results": ["'"$UUID"'"],
-        "deleteResults": true
-      }'
+    environment:
+      ALLURE_SERVER_URL: http://10.110.213.220:8080
+    secrets: [DRONE_BUILD_NUMBER, DRONE_BUILD_LINK]
