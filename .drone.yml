@@ -59,3 +59,9 @@ steps:
        -H 'accept: */*' -H 'Content-Type: multipart/form-data' \
        -F 'allureResults=@allure-results.zip;type=application/zip' | jq -r '.uuid') 
       echo "Result UUID:" $UUID
+    - |
+      # Generate report based on the uploaded result
+      curl -X 'POST' $SERVER/api/report" \ 
+      -H 'accept: */*' \
+      -H 'Content-Type: application/json' \ 
+      -d "{\"reportSpec\":{\"path\":[\"pathstring\"],\"executorInfo\":{\"name\":\"Drone\",\"type\":\"exectype\",\"url\":\"https://github.com/senior-tester/run-tests-demo/actions/workflows/server.yml\",\"buildOrder\":0,\"buildName\":\"$GITHUB_RUN_NUMBER\",\"buildUrl\":\"https://github.com/senior-tester/run-tests-demo/actions/runs/$GITHUB_RUN_ID\",\"reportName\":\"my_report_name\",\"reportUrl\":\"my_report_url\"}},\"results\":[\"$UUID\"],\"deleteResults\":true}"
