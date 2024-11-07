@@ -66,16 +66,16 @@ steps:
       -H 'accept: */*' \
       -d '{
         "reportSpec": {
-          "path": ["string"],
+          "path": ["main"],
           "executorInfo": {
             "name": "Drone",
             "type": "exectype",
             "url": "",
-            "buildOrder": 0,
-            "buildName": "",
-            "buildUrl": "",
+            "buildOrder": 1,
+            "buildName": "'"$DRONE_BUILD_NUMBER"'",
+            "buildUrl": "'"$DRONE_BUILD_LINK"'",
             "reportName": "NEOS",
-            "reportUrl": "string"
+            "reportUrl": "report"
           }
         },
         "results": ["'"$UUID"'"],
