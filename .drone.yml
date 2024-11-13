@@ -14,18 +14,18 @@ trigger:
     - refs/tags/v**
 
 steps:
-#  - name: check style
-#    image: igur007/py3106allure:latest
-#    pull: if-not-exists
-#    commands:
-#    - pip3 install invoke
-#    - pip3 install uv
-#    - inv install-dev
-#    - . .venv/bin/activate
+  - name: check style
+    image: igur007/py3106allure:latest
+    pull: if-not-exists
+    commands:
+    - pip3 install invoke
+    - pip3 install uv
+    - inv install-dev
+    - . .venv/bin/activate
 
   - name: run unit tests
-#    depends_on:
-#      - check style
+    depends_on:
+      - check style
     image: igur007/py3106allure:latest
     pull: if-not-exists
     commands:
