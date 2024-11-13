@@ -19,7 +19,7 @@ def check_style(context):
 
 @invoke.task
 def tests(context):
-    context.run("pytest tests/ -x -s")
+    context.run("pytest tests/ -n3 -vv -r xsX --capture=sys --tb=short --alluredir=./allure-results ")
 
 
 @invoke.task
