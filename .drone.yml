@@ -39,6 +39,11 @@ steps:
       - run unit tests
     image: igur007/drone-allure-server-plugin:latest
     pull: if-not-exists
+    when:
+      status:
+        - failure
+        - success
     environment:
-      ALLURE_SERVER_URL: http://10.110.213.220:8080
+#      ALLURE_SERVER_URL: http://10.110.213.220:8080
+      ALLURE_SERVER_URL: http://allure-server.allure-server.svc.cluster.local:8080
     secrets: [DRONE_BUILD_NUMBER, DRONE_BUILD_LINK]
