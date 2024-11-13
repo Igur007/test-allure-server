@@ -9,7 +9,7 @@ from harness.api.base import base_requests
 @allure.feature("e2e")
 class TestE2ERequests:
 
-    @pytest.mark.parametrize('execution_number', range(1, 867))
+    @pytest.mark.parametrize('execution_number', range(1, 2000))
     def test(self, config, execution_number):
         br = base_requests.BaseRequests(config)
         for _ in range(25):
