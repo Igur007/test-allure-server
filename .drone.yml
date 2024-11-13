@@ -31,7 +31,7 @@ steps:
     commands:
     - pip3 install invoke
     - . .venv/bin/activate
-    - inv tests-coverage
+    - inv tests
 
 
   - name: allure report
