@@ -19,7 +19,7 @@ def check_style(context):
 
 @invoke.task
 def tests(context):
-    context.run("pytest tests/unit -x -s")
+    context.run("pytest tests/ -x -s")
 
 
 @invoke.task

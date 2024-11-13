@@ -14,18 +14,18 @@ trigger:
     - refs/tags/v**
 
 steps:
-  - name: check style
-    image: igur007/py3106allure:latest
-    pull: if-not-exists
-    commands:
-    - pip3 install invoke
-    - pip3 install uv
-    - inv install-dev
-    - . .venv/bin/activate
+#  - name: check style
+#    image: igur007/py3106allure:latest
+#    pull: if-not-exists
+#    commands:
+#    - pip3 install invoke
+#    - pip3 install uv
+#    - inv install-dev
+#    - . .venv/bin/activate
 
   - name: run unit tests
-    depends_on:
-      - check style
+#    depends_on:
+#      - check style
     image: igur007/py3106allure:latest
     pull: if-not-exists
     commands:
@@ -44,6 +44,5 @@ steps:
         - failure
         - success
     environment:
-#      ALLURE_SERVER_URL: http://10.110.213.220:8080
-      ALLURE_SERVER_URL: http://allure-server.allure-server.svc.cluster.local:8080
+      ALLURE_SERVER_URL: http://10.110.213.220:8080
     secrets: [DRONE_BUILD_NUMBER, DRONE_BUILD_LINK]
