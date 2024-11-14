@@ -12,9 +12,9 @@ class TestE2ERequests:
     @pytest.mark.parametrize('execution_number', range(1, 2000))
     def test(self, config, execution_number):
         br = base_requests.BaseRequests(config)
-        for _ in range(25):
+        for _ in range(50):
             br.client.send(
                 "GET",
                 'https://cluster02.neosdata.cloud/api/gateway/v2/output/d669e53f-6fe3-4727-b0f9-e3be700da88f/journal',
             )
-            sleep(0.2)
+            sleep(0.1)
